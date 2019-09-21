@@ -13,6 +13,108 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2019-09-21T17:15:29.370+06:00
-  initializedAtString: 2019-09-21T17:15:29.370+06:00
-  log: []
+  lastUpdatedAtString: 2019-09-21T17:25:48.641+06:00
+  initializedAtString: 2019-09-21T17:25:17.459+06:00
+  log:
+  - commitID: eaa7bc52103a7c756b86559260636cf0cb26fcf4
+    mergeA: 
+    mergeB: 
+    authorName: Pokemon-Catcher
+    authorEmail: 30660309+Pokemon-Catcher@users.noreply.github.com
+    commitEmail: 30660309+Pokemon-Catcher@users.noreply.github.com
+    commitName: Pokemon-Catcher
+    summary: Beginning
+    description: 
+    timeString: 2019-09-21T17:15:59.000+06:00
+    commitTimeString: 2019-09-21T17:15:59.000+06:00
+    changes:
+    - path: RTSGame\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gituser.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gituser.yaml
+      projectPath: Library\gfu\cache\gituser.yaml
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Temp\UnityTempFile-04ab8ecda5620764b8d4800c008e1b29
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-04ab8ecda5620764b8d4800c008e1b29
+      projectPath: Temp\UnityTempFile-04ab8ecda5620764b8d4800c008e1b29
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Temp\UnityTempFile-276b5f859c1c15645babb0f0ee9ec71a
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-276b5f859c1c15645babb0f0ee9ec71a
+      projectPath: Temp\UnityTempFile-276b5f859c1c15645babb0f0ee9ec71a
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Temp\UnityTempFile-2c74fddc5f4bea846b52b20f98aaf4ec
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-2c74fddc5f4bea846b52b20f98aaf4ec
+      projectPath: Temp\UnityTempFile-2c74fddc5f4bea846b52b20f98aaf4ec
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Temp\UnityTempFile-33465c611d508d8478e2b5a291c75455
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-33465c611d508d8478e2b5a291c75455
+      projectPath: Temp\UnityTempFile-33465c611d508d8478e2b5a291c75455
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Temp\UnityTempFile-46decf1258d799645ac84f61662ba1b8
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-46decf1258d799645ac84f61662ba1b8
+      projectPath: Temp\UnityTempFile-46decf1258d799645ac84f61662ba1b8
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Temp\UnityTempFile-506e09f120c98324a8aebe0d01f4f8dd
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-506e09f120c98324a8aebe0d01f4f8dd
+      projectPath: Temp\UnityTempFile-506e09f120c98324a8aebe0d01f4f8dd
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Temp\UnityTempFile-95c3b3993cc5680429cacb2ac0d182b9
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-95c3b3993cc5680429cacb2ac0d182b9
+      projectPath: Temp\UnityTempFile-95c3b3993cc5680429cacb2ac0d182b9
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Temp\UnityTempFile-9ab4c1ace78b25f46a813282482be5c4
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-9ab4c1ace78b25f46a813282482be5c4
+      projectPath: Temp\UnityTempFile-9ab4c1ace78b25f46a813282482be5c4
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Temp\UnityTempFile-d0a8fc2a5a90b894dbb78f455c7b21bc
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-d0a8fc2a5a90b894dbb78f455c7b21bc
+      projectPath: Temp\UnityTempFile-d0a8fc2a5a90b894dbb78f455c7b21bc
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: RTSGame\Temp\UnityTempFile-f9eadc5789cc6484da8921999c07c0c8
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-f9eadc5789cc6484da8921999c07c0c8
+      projectPath: Temp\UnityTempFile-f9eadc5789cc6484da8921999c07c0c8
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0

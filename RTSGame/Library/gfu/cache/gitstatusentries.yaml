@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-09-21T17:15:43.857+06:00
-  initializedAtString: 2019-09-21T17:15:21.734+06:00
+  lastUpdatedAtString: 2019-09-21T17:25:30.660+06:00
+  initializedAtString: 2019-09-21T17:24:00.706+06:00
   entries:
   - path: RTSGame\Assets\Plugins.meta
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Assets\Plugins.meta
@@ -544,6 +544,18 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
+  - path: RTSGame\Library\expandedItems
+    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\expandedItems
+    projectPath: Library\expandedItems
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: RTSGame\Library\gfu\cache\branches.yaml
+    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
   - path: RTSGame\Library\gfu\cache\gitlocks.yaml
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
@@ -554,26 +566,26 @@ MonoBehaviour:
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitlog.yaml
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: RTSGame\Library\gfu\cache\gitstatusentries.yaml
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: RTSGame\Library\gfu\cache\gittrackingstatus.yaml
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: RTSGame\Library\gfu\cache\gituser.yaml
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gituser.yaml
     projectPath: Library\gfu\cache\gituser.yaml
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 3
   - path: RTSGame\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
@@ -583,6 +595,12 @@ MonoBehaviour:
   - path: RTSGame\Library\InspectorExpandedItems.asset
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\InspectorExpandedItems.asset
     projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: RTSGame\Library\LastSceneManagerSetup.txt
+    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -21609,12 +21627,6 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: RTSGame\Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    projectPath: Library\ScriptAssemblies\BuiltinAssemblies.stamp
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
   - path: RTSGame\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
     projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
@@ -22083,15 +22095,15 @@ MonoBehaviour:
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: RTSGame\Temp\UnityLockfile
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityLockfile
-    projectPath: Temp\UnityLockfile
+  - path: RTSGame\Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
+    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
+    projectPath: Temp\ProcessJobs\e9a6970f79cd12d8b075e7d72f1b07cb.bakert
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-03847187c248ea54f8ae96be7fccc67f
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-03847187c248ea54f8ae96be7fccc67f
-    projectPath: Temp\UnityTempFile-03847187c248ea54f8ae96be7fccc67f
+  - path: RTSGame\Temp\UnityLockfile
+    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityLockfile
+    projectPath: Temp\UnityLockfile
     originalPath: 
     indexStatus: 1
     workTreeStatus: 1
@@ -22099,209 +22111,59 @@ MonoBehaviour:
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-04ab8ecda5620764b8d4800c008e1b29
     projectPath: Temp\UnityTempFile-04ab8ecda5620764b8d4800c008e1b29
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-0c5665b124dd7054e903ee63bc010027
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-0c5665b124dd7054e903ee63bc010027
-    projectPath: Temp\UnityTempFile-0c5665b124dd7054e903ee63bc010027
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-0c711a9a9b060964eba5133d002d9b08
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-0c711a9a9b060964eba5133d002d9b08
-    projectPath: Temp\UnityTempFile-0c711a9a9b060964eba5133d002d9b08
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-1381c5ab953fe624da7a888f538d7ccc
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-1381c5ab953fe624da7a888f538d7ccc
-    projectPath: Temp\UnityTempFile-1381c5ab953fe624da7a888f538d7ccc
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-17e89dc02f62d0346a2a6d2a12898c59
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-17e89dc02f62d0346a2a6d2a12898c59
-    projectPath: Temp\UnityTempFile-17e89dc02f62d0346a2a6d2a12898c59
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-21dfc8017ae33b64385ce88a897b6b59
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-21dfc8017ae33b64385ce88a897b6b59
-    projectPath: Temp\UnityTempFile-21dfc8017ae33b64385ce88a897b6b59
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: RTSGame\Temp\UnityTempFile-276b5f859c1c15645babb0f0ee9ec71a
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-276b5f859c1c15645babb0f0ee9ec71a
     projectPath: Temp\UnityTempFile-276b5f859c1c15645babb0f0ee9ec71a
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: RTSGame\Temp\UnityTempFile-2c74fddc5f4bea846b52b20f98aaf4ec
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-2c74fddc5f4bea846b52b20f98aaf4ec
     projectPath: Temp\UnityTempFile-2c74fddc5f4bea846b52b20f98aaf4ec
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-2ecbe8aade78e0e40903f465d9180629
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-2ecbe8aade78e0e40903f465d9180629
-    projectPath: Temp\UnityTempFile-2ecbe8aade78e0e40903f465d9180629
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: RTSGame\Temp\UnityTempFile-33465c611d508d8478e2b5a291c75455
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-33465c611d508d8478e2b5a291c75455
     projectPath: Temp\UnityTempFile-33465c611d508d8478e2b5a291c75455
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-43cb1787a706cc946b4c1f497dd37125
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-43cb1787a706cc946b4c1f497dd37125
-    projectPath: Temp\UnityTempFile-43cb1787a706cc946b4c1f497dd37125
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: RTSGame\Temp\UnityTempFile-46decf1258d799645ac84f61662ba1b8
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-46decf1258d799645ac84f61662ba1b8
     projectPath: Temp\UnityTempFile-46decf1258d799645ac84f61662ba1b8
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-4f9f11e15989f2d42bb5e77760811024
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-4f9f11e15989f2d42bb5e77760811024
-    projectPath: Temp\UnityTempFile-4f9f11e15989f2d42bb5e77760811024
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: RTSGame\Temp\UnityTempFile-506e09f120c98324a8aebe0d01f4f8dd
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-506e09f120c98324a8aebe0d01f4f8dd
     projectPath: Temp\UnityTempFile-506e09f120c98324a8aebe0d01f4f8dd
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-50929701e7d965043b24fa01bfc7e99b
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-50929701e7d965043b24fa01bfc7e99b
-    projectPath: Temp\UnityTempFile-50929701e7d965043b24fa01bfc7e99b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-87ef1aefb7a7320499b7511781b0678a
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-87ef1aefb7a7320499b7511781b0678a
-    projectPath: Temp\UnityTempFile-87ef1aefb7a7320499b7511781b0678a
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-9308c9a044e7ec64592f4cf12e0d58cd
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-9308c9a044e7ec64592f4cf12e0d58cd
-    projectPath: Temp\UnityTempFile-9308c9a044e7ec64592f4cf12e0d58cd
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-93bdeb8bbcc2c10428d12a757125f7bb
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-93bdeb8bbcc2c10428d12a757125f7bb
-    projectPath: Temp\UnityTempFile-93bdeb8bbcc2c10428d12a757125f7bb
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: RTSGame\Temp\UnityTempFile-95c3b3993cc5680429cacb2ac0d182b9
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-95c3b3993cc5680429cacb2ac0d182b9
     projectPath: Temp\UnityTempFile-95c3b3993cc5680429cacb2ac0d182b9
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: RTSGame\Temp\UnityTempFile-9ab4c1ace78b25f46a813282482be5c4
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-9ab4c1ace78b25f46a813282482be5c4
     projectPath: Temp\UnityTempFile-9ab4c1ace78b25f46a813282482be5c4
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-a77020ffd753fde4f98b54514b5eda59
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-a77020ffd753fde4f98b54514b5eda59
-    projectPath: Temp\UnityTempFile-a77020ffd753fde4f98b54514b5eda59
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-b3146d0a94ef27a4196c593f72a30c91
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-b3146d0a94ef27a4196c593f72a30c91
-    projectPath: Temp\UnityTempFile-b3146d0a94ef27a4196c593f72a30c91
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-b880e92a8f4e08640835abbcf968e64d
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-b880e92a8f4e08640835abbcf968e64d
-    projectPath: Temp\UnityTempFile-b880e92a8f4e08640835abbcf968e64d
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-bf9f93acb64ed4b4da795fbe54f70085
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-bf9f93acb64ed4b4da795fbe54f70085
-    projectPath: Temp\UnityTempFile-bf9f93acb64ed4b4da795fbe54f70085
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-ccd210e12be37744fae328d7a26d6108
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-ccd210e12be37744fae328d7a26d6108
-    projectPath: Temp\UnityTempFile-ccd210e12be37744fae328d7a26d6108
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-cffabf3b4f8d03844ae6943046b75250
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-cffabf3b4f8d03844ae6943046b75250
-    projectPath: Temp\UnityTempFile-cffabf3b4f8d03844ae6943046b75250
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: RTSGame\Temp\UnityTempFile-d0a8fc2a5a90b894dbb78f455c7b21bc
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-d0a8fc2a5a90b894dbb78f455c7b21bc
     projectPath: Temp\UnityTempFile-d0a8fc2a5a90b894dbb78f455c7b21bc
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-d1827e6ced8529c4e907ef44996f0ae6
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-d1827e6ced8529c4e907ef44996f0ae6
-    projectPath: Temp\UnityTempFile-d1827e6ced8529c4e907ef44996f0ae6
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-e5c1cd21115752c4c81877a7563250c3
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-e5c1cd21115752c4c81877a7563250c3
-    projectPath: Temp\UnityTempFile-e5c1cd21115752c4c81877a7563250c3
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-e6c9daef3653f2242a8350f87b5cc142
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-e6c9daef3653f2242a8350f87b5cc142
-    projectPath: Temp\UnityTempFile-e6c9daef3653f2242a8350f87b5cc142
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-ebdf1a53f4679494facec0d0532bd1c6
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-ebdf1a53f4679494facec0d0532bd1c6
-    projectPath: Temp\UnityTempFile-ebdf1a53f4679494facec0d0532bd1c6
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-ee1ffb6d6afaaec4ebfaf9cc4aeac2ff
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-ee1ffb6d6afaaec4ebfaf9cc4aeac2ff
-    projectPath: Temp\UnityTempFile-ee1ffb6d6afaaec4ebfaf9cc4aeac2ff
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
   - path: RTSGame\Temp\UnityTempFile-f9eadc5789cc6484da8921999c07c0c8
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-f9eadc5789cc6484da8921999c07c0c8
     projectPath: Temp\UnityTempFile-f9eadc5789cc6484da8921999c07c0c8
     originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-fc8e482b9f6f07541894c73064638c99
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-fc8e482b9f6f07541894c73064638c99
-    projectPath: Temp\UnityTempFile-fc8e482b9f6f07541894c73064638c99
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
-  - path: RTSGame\Temp\UnityTempFile-fdf6bdd7698571a4ba1ce968b4cdf70b
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Temp\UnityTempFile-fdf6bdd7698571a4ba1ce968b4cdf70b
-    projectPath: Temp\UnityTempFile-fdf6bdd7698571a4ba1ce968b4cdf70b
-    originalPath: 
-    indexStatus: 1
-    workTreeStatus: 1
+    indexStatus: 0
+    workTreeStatus: 5
