@@ -13,9 +13,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2019-09-21T18:01:54.031+06:00
+  lastUpdatedAtString: 2019-09-21T18:02:43.768+06:00
   initializedAtString: 2019-09-21T18:01:53.319+06:00
   log:
+  - commitID: 2015b8bc1816afac1850137fc45ac83f67e5dd85
+    mergeA: 
+    mergeB: 
+    authorName: Pokemon-Catcher
+    authorEmail: 30660309+Pokemon-Catcher@users.noreply.github.com
+    commitEmail: 30660309+Pokemon-Catcher@users.noreply.github.com
+    commitName: Pokemon-Catcher
+    summary: er
+    description: 
+    timeString: 2019-09-21T18:02:02.000+06:00
+    commitTimeString: 2019-09-21T18:02:02.000+06:00
+    changes:
+    - path: RTSGame\Library\gfu\cache\branches.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\shadercompiler-UnityShaderCompiler.exe0.log
+      projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 11965255cdd16eb2431ea53b6163b037eb28c307
     mergeA: 
     mergeB: 
