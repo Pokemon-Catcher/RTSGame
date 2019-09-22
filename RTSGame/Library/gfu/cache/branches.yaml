@@ -13,12 +13,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-09-21T18:02:43.565+06:00
-  initializedAtString: 2019-09-21T18:01:50.763+06:00
+  lastUpdatedAtString: 2019-09-22T23:06:29.609+06:00
+  initializedAtString: 2019-09-22T22:56:39.512+06:00
   localBranches:
+  - name: anotherone
+    tracking: origin/anotherone
   - name: master
     tracking: origin/master
   remoteBranches:
+  - name: origin/anotherone
+    tracking: '[None]'
   - name: origin/master
     tracking: '[None]'
   remotes:
@@ -31,8 +35,14 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - anotherone
     - master
     values:
+    - name: anotherone
+      remote:
+        name: origin
+        url: https://Pokemon-Catcher:FXzTXmt5tgaomsk55@github.com/Pokemon-Catcher/RTSGame.git
+      trackingBranch: anotherone
     - name: master
       remote:
         name: origin
@@ -43,9 +53,15 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
+      - anotherone
       - master
     subKeyValues:
     - Values:
+      - name: anotherone
+        remote:
+          name: origin
+          url: https://Pokemon-Catcher:FXzTXmt5tgaomsk55@github.com/Pokemon-Catcher/RTSGame.git
+        trackingBranch: 
       - name: master
         remote:
           name: origin

@@ -13,9 +13,1521 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2019-09-21T18:02:43.768+06:00
-  initializedAtString: 2019-09-21T18:01:53.319+06:00
+  lastUpdatedAtString: 2019-09-22T23:06:22.611+06:00
+  initializedAtString: 2019-09-22T23:00:02.196+06:00
   log:
+  - commitID: b886a7386922812bc6a7293276eb1ee9c4523c19
+    mergeA: 
+    mergeB: 
+    authorName: Glebati228
+    authorEmail: nub.azazaza@mail.ru
+    commitEmail: nub.azazaza@mail.ru
+    commitName: Glebati228
+    summary: added event agregator with his testings
+    description: 
+    timeString: 2019-09-22T17:11:25.000+06:00
+    commitTimeString: 2019-09-22T17:11:25.000+06:00
+    changes:
+    - path: Assets\Scripts\EventAggregator.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator.meta
+      projectPath: ..\Assets\Scripts\EventAggregator.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\EventAggregator\EventAggregator.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator\EventAggregator.cs
+      projectPath: ..\Assets\Scripts\EventAggregator\EventAggregator.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\EventAggregator\EventAggregator.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator\EventAggregator.cs.meta
+      projectPath: ..\Assets\Scripts\EventAggregator\EventAggregator.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\EventAggregator\Events.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator\Events.cs
+      projectPath: ..\Assets\Scripts\EventAggregator\Events.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\EventAggregator\Events.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator\Events.cs.meta
+      projectPath: ..\Assets\Scripts\EventAggregator\Events.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\EventAggregator\IEventBase.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator\IEventBase.cs
+      projectPath: ..\Assets\Scripts\EventAggregator\IEventBase.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\EventAggregator\IEventBase.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator\IEventBase.cs.meta
+      projectPath: ..\Assets\Scripts\EventAggregator\IEventBase.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\TestPublisher.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\TestPublisher.cs
+      projectPath: ..\Assets\Scripts\TestPublisher.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\TestPublisher.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\TestPublisher.cs.meta
+      projectPath: ..\Assets\Scripts\TestPublisher.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\TestSubscriber.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\TestSubscriber.cs
+      projectPath: ..\Assets\Scripts\TestSubscriber.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\TestSubscriber.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\TestSubscriber.cs.meta
+      projectPath: ..\Assets\Scripts\TestSubscriber.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Watafak.unity
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Watafak.unity
+      projectPath: ..\Assets\Watafak.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ProjectSettings\TagManager.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\TagManager.asset
+      projectPath: ..\ProjectSettings\TagManager.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 1672e1e3bd4a843f8b6b0ca9d3db14304da9b1a2
+    mergeA: 
+    mergeB: 
+    authorName: Glebati228
+    authorEmail: nub.azazaza@mail.ru
+    commitEmail: nub.azazaza@mail.ru
+    commitName: Glebati228
+    summary: added new assets
+    description: 
+    timeString: 2019-09-22T15:42:52.000+06:00
+    commitTimeString: 2019-09-22T15:42:52.000+06:00
+    changes:
+    - path: Assets\Bitgem_RTS_Pack.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Ground_Textures.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Ground_Textures.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Ground_Textures.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Ground_Textures\grass_01_1.png
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_01_1.png
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_01_1.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Ground_Textures\grass_01_1.png.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_01_1.png.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_01_1.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Ground_Textures\grass_02_1.png
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_02_1.png
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_02_1.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Ground_Textures\grass_02_1.png.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_02_1.png.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_02_1.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Ground_Textures\grass_03_1.png
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_03_1.png
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_03_1.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Ground_Textures\grass_03_1.png.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_03_1.png.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_03_1.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Ground_Textures\grass_04_1.png
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_04_1.png
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_04_1.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Ground_Textures\grass_04_1.png.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_04_1.png.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Ground_Textures\grass_04_1.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Animations_Off.unity
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Animations_Off.unity
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Animations_Off.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Animations_Off.unity.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Animations_Off.unity.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Animations_Off.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Animations_On.unity
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Animations_On.unity
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Animations_On.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Animations_On.unity.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Animations_On.unity.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Animations_On.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Materials.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Materials.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Materials.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Materials\RTS_human_atlas_4096.mat
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Materials\RTS_human_atlas_4096.mat
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Materials\RTS_human_atlas_4096.mat
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Materials\RTS_human_atlas_4096.mat.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Materials\RTS_human_atlas_4096.mat.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Materials\RTS_human_atlas_4096.mat.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Textures.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Textures.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Textures.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Textures\RTS_human_atlas_4096.tga
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Textures\RTS_human_atlas_4096.tga
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Textures\RTS_human_atlas_4096.tga
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Textures\RTS_human_atlas_4096.tga.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Textures\RTS_human_atlas_4096.tga.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\Textures\RTS_human_atlas_4096.tga.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\banner_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\banner_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\banner_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\banner_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\banner_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\banner_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\barracks_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\barracks_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\barracks_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\barracks_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\barracks_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\barracks_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\cauldron_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\cauldron_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\cauldron_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\cauldron_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\cauldron_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\cauldron_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\factory_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\factory_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\factory_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\factory_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\factory_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\factory_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\house_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\house_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\house_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\house_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\house_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\house_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\mine_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\mine_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\mine_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\mine_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\mine_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\mine_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\oracle_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\oracle_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\oracle_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\oracle_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\oracle_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\oracle_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\smithy_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\smithy_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\smithy_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\smithy_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\smithy_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\smithy_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\throne_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\throne_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\throne_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\throne_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\throne_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\throne_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\tower_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\tower_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\tower_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\tower_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\tower_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\tower_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\woodcutter_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\woodcutter_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\woodcutter_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Models\woodcutter_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\woodcutter_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Models\woodcutter_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\banner.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\banner.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\banner.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\banner.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\banner.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\banner.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\barracks.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\barracks.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\barracks.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\barracks.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\barracks.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\barracks.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\cauldron.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\cauldron.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\cauldron.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\cauldron.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\cauldron.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\cauldron.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\factory.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\factory.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\factory.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\factory.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\factory.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\factory.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\house.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\house.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\house.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\house.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\house.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\house.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\mine.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\mine.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\mine.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\mine.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\mine.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\mine.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\oracle.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\oracle.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\oracle.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\oracle.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\oracle.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\oracle.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\smithy.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\smithy.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\smithy.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\smithy.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\smithy.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\smithy.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\throne.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\throne.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\throne.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\throne.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\throne.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\throne.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\tower.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\tower.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\tower.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\tower.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\tower.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\tower.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\woodcutter.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\woodcutter.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\woodcutter.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\woodcutter.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\woodcutter.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Human_Buildings\Prefabs\woodcutter.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Animation_Off.unity
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Animation_Off.unity
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Animation_Off.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Animation_Off.unity.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Animation_Off.unity.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Animation_Off.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Animation_On.unity
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Animation_On.unity
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Animation_On.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Animation_On.unity.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Animation_On.unity.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Animation_On.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Materials.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Materials.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Materials.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Materials\RTS_orc_atlas_4096.mat
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Materials\RTS_orc_atlas_4096.mat
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Materials\RTS_orc_atlas_4096.mat
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Materials\RTS_orc_atlas_4096.mat.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Materials\RTS_orc_atlas_4096.mat.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Materials\RTS_orc_atlas_4096.mat.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Textures.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Textures.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Textures.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Textures\RTS_orc_atlas_4096.tga
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Textures\RTS_orc_atlas_4096.tga
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Textures\RTS_orc_atlas_4096.tga
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Textures\RTS_orc_atlas_4096.tga.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Textures\RTS_orc_atlas_4096.tga.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\Textures\RTS_orc_atlas_4096.tga.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\altar_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\altar_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\altar_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\altar_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\altar_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\altar_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\banner_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\banner_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\banner_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\banner_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\banner_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\banner_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\barracks_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\barracks_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\barracks_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\barracks_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\barracks_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\barracks_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\cauldron_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\cauldron_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\cauldron_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\cauldron_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\cauldron_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\cauldron_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\factory_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\factory_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\factory_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\factory_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\factory_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\factory_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\guard_tower_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\guard_tower_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\guard_tower_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\guard_tower_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\guard_tower_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\guard_tower_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\hut_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\hut_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\hut_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\hut_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\hut_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\hut_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\lumberjack_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\lumberjack_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\lumberjack_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\lumberjack_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\lumberjack_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\lumberjack_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\mine_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\mine_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\mine_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\mine_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\mine_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\mine_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\smithy_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\smithy_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\smithy_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\smithy_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\smithy_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\smithy_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\throne_atlas.fbx
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\throne_atlas.fbx
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\throne_atlas.fbx
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\throne_atlas.fbx.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\throne_atlas.fbx.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Models\throne_atlas.fbx.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\altar.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\altar.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\altar.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\altar.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\altar.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\altar.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\banner.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\banner.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\banner.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\banner.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\banner.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\banner.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\barracks.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\barracks.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\barracks.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\barracks.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\barracks.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\barracks.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\cauldron.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\cauldron.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\cauldron.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\cauldron.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\cauldron.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\cauldron.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\factory.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\factory.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\factory.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\factory.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\factory.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\factory.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\guard_tower.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\guard_tower.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\guard_tower.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\guard_tower.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\guard_tower.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\guard_tower.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\hut_atlas.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\hut_atlas.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\hut_atlas.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\hut_atlas.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\hut_atlas.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\hut_atlas.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\lumberjack_atlas.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\lumberjack_atlas.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\lumberjack_atlas.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\lumberjack_atlas.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\lumberjack_atlas.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\lumberjack_atlas.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\mine_atlas.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\mine_atlas.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\mine_atlas.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\mine_atlas.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\mine_atlas.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\mine_atlas.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\smithy_atlas.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\smithy_atlas.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\smithy_atlas.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\smithy_atlas.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\smithy_atlas.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\smithy_atlas.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\throne_atlas.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\throne_atlas.prefab
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\throne_atlas.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\throne_atlas.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\throne_atlas.prefab.meta
+      projectPath: ..\Assets\Bitgem_RTS_Pack\Orc_Buildings\Prefabs\throne_atlas.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts.meta
+      projectPath: ..\Assets\Scripts.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\CameraMove.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\CameraMove.cs
+      projectPath: ..\Assets\Scripts\CameraMove.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\CameraMove.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\CameraMove.cs.meta
+      projectPath: ..\Assets\Scripts\CameraMove.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\HUD.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\HUD.cs
+      projectPath: ..\Assets\Scripts\HUD.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\HUD.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\HUD.cs.meta
+      projectPath: ..\Assets\Scripts\HUD.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\PauseMenu.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\PauseMenu.cs
+      projectPath: ..\Assets\Scripts\PauseMenu.cs
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Scripts\PauseMenu.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\PauseMenu.cs.meta
+      projectPath: ..\Assets\Scripts\PauseMenu.cs.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Textures.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Textures.meta
+      projectPath: ..\Assets\Textures.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Textures\19-tekstura-belaya.png
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Textures\19-tekstura-belaya.png
+      projectPath: ..\Assets\Textures\19-tekstura-belaya.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Textures\19-tekstura-belaya.png.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Textures\19-tekstura-belaya.png.meta
+      projectPath: ..\Assets\Textures\19-tekstura-belaya.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Textures\MenuGUI.guiskin
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Textures\MenuGUI.guiskin
+      projectPath: ..\Assets\Textures\MenuGUI.guiskin
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Textures\MenuGUI.guiskin.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Textures\MenuGUI.guiskin.meta
+      projectPath: ..\Assets\Textures\MenuGUI.guiskin.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Textures\MinMapTexture.renderTexture
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Textures\MinMapTexture.renderTexture
+      projectPath: ..\Assets\Textures\MinMapTexture.renderTexture
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Textures\MinMapTexture.renderTexture.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Textures\MinMapTexture.renderTexture.meta
+      projectPath: ..\Assets\Textures\MinMapTexture.renderTexture.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Textures\asphalt1sm.jpg
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Textures\asphalt1sm.jpg
+      projectPath: ..\Assets\Textures\asphalt1sm.jpg
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Textures\asphalt1sm.jpg.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Textures\asphalt1sm.jpg.meta
+      projectPath: ..\Assets\Textures\asphalt1sm.jpg.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Textures\texture.jpg
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Textures\texture.jpg
+      projectPath: ..\Assets\Textures\texture.jpg
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Textures\texture.jpg.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Textures\texture.jpg.meta
+      projectPath: ..\Assets\Textures\texture.jpg.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS.meta
+      projectPath: ..\Assets\Toon_RTS.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\AC_undead.controller
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\AC_undead.controller
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\AC_undead.controller
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\AC_undead.controller.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\AC_undead.controller.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\AC_undead.controller.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\animation.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\animation.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\animation.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\animation\UD_infantry_05_combat_idle.FBX
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\animation\UD_infantry_05_combat_idle.FBX
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\animation\UD_infantry_05_combat_idle.FBX
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\animation\UD_infantry_05_combat_idle.FBX.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\animation\UD_infantry_05_combat_idle.FBX.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\animation\UD_infantry_05_combat_idle.FBX.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\animation\UD_infantry_06_combat_walk.FBX
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\animation\UD_infantry_06_combat_walk.FBX
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\animation\UD_infantry_06_combat_walk.FBX
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\animation\UD_infantry_06_combat_walk.FBX.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\animation\UD_infantry_06_combat_walk.FBX.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\animation\UD_infantry_06_combat_walk.FBX.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\animation\UD_infantry_07_attack_A.FBX
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\animation\UD_infantry_07_attack_A.FBX
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\animation\UD_infantry_07_attack_A.FBX
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\animation\UD_infantry_07_attack_A.FBX.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\animation\UD_infantry_07_attack_A.FBX.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\animation\UD_infantry_07_attack_A.FBX.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\demo_scene.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\demo_scene.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\demo_scene.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\demo_scene\ToonRTS_Undead_demo_scene.unity
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\demo_scene\ToonRTS_Undead_demo_scene.unity
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\demo_scene\ToonRTS_Undead_demo_scene.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\demo_scene\ToonRTS_Undead_demo_scene.unity.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\demo_scene\ToonRTS_Undead_demo_scene.unity.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\demo_scene\ToonRTS_Undead_demo_scene.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\demo_scene\sample_ground.mat
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\demo_scene\sample_ground.mat
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\demo_scene\sample_ground.mat
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\demo_scene\sample_ground.mat.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\demo_scene\sample_ground.mat.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\demo_scene\sample_ground.mat.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\demo_scene\sample_ground_texture.tga
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\demo_scene\sample_ground_texture.tga
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\demo_scene\sample_ground_texture.tga
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\demo_scene\sample_ground_texture.tga.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\demo_scene\sample_ground_texture.tga.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\demo_scene\sample_ground_texture.tga.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\model.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\model.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\model.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\model\Materials.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\model\Materials.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\model\Materials.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\model\Materials\Undead_RTS_units_demo.mat
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\model\Materials\Undead_RTS_units_demo.mat
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\model\Materials\Undead_RTS_units_demo.mat
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\model\Materials\Undead_RTS_units_demo.mat.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\model\Materials\Undead_RTS_units_demo.mat.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\model\Materials\Undead_RTS_units_demo.mat.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\model\Materials\Undead_demo.tga
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\model\Materials\Undead_demo.tga
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\model\Materials\Undead_demo.tga
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\model\Materials\Undead_demo.tga.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\model\Materials\Undead_demo.tga.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\model\Materials\Undead_demo.tga.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\model\UD_demo_character.FBX
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\model\UD_demo_character.FBX
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\model\UD_demo_character.FBX
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\model\UD_demo_character.FBX.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\model\UD_demo_character.FBX.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\model\UD_demo_character.FBX.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\prefab.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\prefab\UD_demo_character.prefab
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\prefab\UD_demo_character.prefab
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\prefab\UD_demo_character.prefab
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS\unded_Demo\prefab\UD_demo_character.prefab.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS\unded_Demo\prefab\UD_demo_character.prefab.meta
+      projectPath: ..\Assets\Toon_RTS\unded_Demo\prefab\UD_demo_character.prefab.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo.meta
+      projectPath: ..\Assets\Toon_RTS_demo.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\AC_knight.controller
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\AC_knight.controller
+      projectPath: ..\Assets\Toon_RTS_demo\AC_knight.controller
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\AC_knight.controller.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\AC_knight.controller.meta
+      projectPath: ..\Assets\Toon_RTS_demo\AC_knight.controller.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\Toon_RTS_Units.jpg
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\Toon_RTS_Units.jpg
+      projectPath: ..\Assets\Toon_RTS_demo\Toon_RTS_Units.jpg
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\Toon_RTS_Units.jpg.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\Toon_RTS_Units.jpg.meta
+      projectPath: ..\Assets\Toon_RTS_demo\Toon_RTS_Units.jpg.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\animations.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\animations.meta
+      projectPath: ..\Assets\Toon_RTS_demo\animations.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\animations\WK_heavy_infantry_04_charge.FBX
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_04_charge.FBX
+      projectPath: ..\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_04_charge.FBX
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\animations\WK_heavy_infantry_04_charge.FBX.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_04_charge.FBX.meta
+      projectPath: ..\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_04_charge.FBX.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\animations\WK_heavy_infantry_05_combat_idle.FBX
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_05_combat_idle.FBX
+      projectPath: ..\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_05_combat_idle.FBX
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\animations\WK_heavy_infantry_05_combat_idle.FBX.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_05_combat_idle.FBX.meta
+      projectPath: ..\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_05_combat_idle.FBX.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\animations\WK_heavy_infantry_06_combat_walk.FBX
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_06_combat_walk.FBX
+      projectPath: ..\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_06_combat_walk.FBX
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\animations\WK_heavy_infantry_06_combat_walk.FBX.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_06_combat_walk.FBX.meta
+      projectPath: ..\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_06_combat_walk.FBX.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\animations\WK_heavy_infantry_08_attack_B.FBX
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_08_attack_B.FBX
+      projectPath: ..\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_08_attack_B.FBX
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\animations\WK_heavy_infantry_08_attack_B.FBX.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_08_attack_B.FBX.meta
+      projectPath: ..\Assets\Toon_RTS_demo\animations\WK_heavy_infantry_08_attack_B.FBX.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\models.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\models.meta
+      projectPath: ..\Assets\Toon_RTS_demo\models.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\models\Materials.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\models\Materials.meta
+      projectPath: ..\Assets\Toon_RTS_demo\models\Materials.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\models\Materials\DemoTexture.mat
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\models\Materials\DemoTexture.mat
+      projectPath: ..\Assets\Toon_RTS_demo\models\Materials\DemoTexture.mat
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\models\Materials\DemoTexture.mat.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\models\Materials\DemoTexture.mat.meta
+      projectPath: ..\Assets\Toon_RTS_demo\models\Materials\DemoTexture.mat.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\models\Materials\DemoTexture.png
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\models\Materials\DemoTexture.png
+      projectPath: ..\Assets\Toon_RTS_demo\models\Materials\DemoTexture.png
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\models\Materials\DemoTexture.png.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\models\Materials\DemoTexture.png.meta
+      projectPath: ..\Assets\Toon_RTS_demo\models\Materials\DemoTexture.png.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\models\ToonRTS_demo_Knight.FBX
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\models\ToonRTS_demo_Knight.FBX
+      projectPath: ..\Assets\Toon_RTS_demo\models\ToonRTS_demo_Knight.FBX
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Toon_RTS_demo\models\ToonRTS_demo_Knight.FBX.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Toon_RTS_demo\models\ToonRTS_demo_Knight.FBX.meta
+      projectPath: ..\Assets\Toon_RTS_demo\models\ToonRTS_demo_Knight.FBX.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Watafak.unity
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Watafak.unity
+      projectPath: ..\Assets\Watafak.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ProjectSettings\ProjectSettings.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\ProjectSettings.asset
+      projectPath: ..\ProjectSettings\ProjectSettings.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: 023634440b5132aba57b4bec0bd1cea3de0eccb6
+    mergeA: 
+    mergeB: 
+    authorName: Glebati228
+    authorEmail: nub.azazaza@mail.ru
+    commitEmail: nub.azazaza@mail.ru
+    commitName: Glebati228
+    summary: some commit
+    description: 
+    timeString: 2019-09-21T21:21:55.000+06:00
+    commitTimeString: 2019-09-21T21:21:55.000+06:00
+    changes:
+    - path: Assets\Materials.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Materials.meta
+      projectPath: ..\Assets\Materials.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Materials\6b9113a3fd3d8a03bcef8f62689af7a7.jpg
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Materials\6b9113a3fd3d8a03bcef8f62689af7a7.jpg
+      projectPath: ..\Assets\Materials\6b9113a3fd3d8a03bcef8f62689af7a7.jpg
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Materials\6b9113a3fd3d8a03bcef8f62689af7a7.jpg.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Materials\6b9113a3fd3d8a03bcef8f62689af7a7.jpg.meta
+      projectPath: ..\Assets\Materials\6b9113a3fd3d8a03bcef8f62689af7a7.jpg.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Materials\Terrain.mat
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Materials\Terrain.mat
+      projectPath: ..\Assets\Materials\Terrain.mat
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Materials\Terrain.mat.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Materials\Terrain.mat.meta
+      projectPath: ..\Assets\Materials\Terrain.mat.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Plugins.meta
+      projectPath: ..\Assets\Plugins.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Plugins\GitHub.meta
+      projectPath: ..\Assets\Plugins\GitHub.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Plugins\GitHub\Editor.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Plugins\GitHub\Editor.meta
+      projectPath: ..\Assets\Plugins\GitHub\Editor.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Watafak.unity
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Watafak.unity
+      projectPath: ..\Assets\Watafak.unity
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Assets\Watafak.unity.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Watafak.unity.meta
+      projectPath: ..\Assets\Watafak.unity.meta
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: Packages\manifest.json
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Packages\manifest.json
+      projectPath: ..\Packages\manifest.json
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\AudioManager.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\AudioManager.asset
+      projectPath: ..\ProjectSettings\AudioManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\ClusterInputManager.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\ClusterInputManager.asset
+      projectPath: ..\ProjectSettings\ClusterInputManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\DynamicsManager.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\DynamicsManager.asset
+      projectPath: ..\ProjectSettings\DynamicsManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\EditorBuildSettings.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\EditorBuildSettings.asset
+      projectPath: ..\ProjectSettings\EditorBuildSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\EditorSettings.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\EditorSettings.asset
+      projectPath: ..\ProjectSettings\EditorSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\GraphicsSettings.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\GraphicsSettings.asset
+      projectPath: ..\ProjectSettings\GraphicsSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\InputManager.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\InputManager.asset
+      projectPath: ..\ProjectSettings\InputManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\NavMeshAreas.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\NavMeshAreas.asset
+      projectPath: ..\ProjectSettings\NavMeshAreas.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\Physics2DSettings.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\Physics2DSettings.asset
+      projectPath: ..\ProjectSettings\Physics2DSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\PresetManager.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\PresetManager.asset
+      projectPath: ..\ProjectSettings\PresetManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\ProjectSettings.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\ProjectSettings.asset
+      projectPath: ..\ProjectSettings\ProjectSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\ProjectVersion.txt
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\ProjectVersion.txt
+      projectPath: ..\ProjectSettings\ProjectVersion.txt
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\QualitySettings.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\QualitySettings.asset
+      projectPath: ..\ProjectSettings\QualitySettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\TagManager.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\TagManager.asset
+      projectPath: ..\ProjectSettings\TagManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\TimeManager.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\TimeManager.asset
+      projectPath: ..\ProjectSettings\TimeManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\UnityConnectSettings.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\UnityConnectSettings.asset
+      projectPath: ..\ProjectSettings\UnityConnectSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\VFXManager.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\VFXManager.asset
+      projectPath: ..\ProjectSettings\VFXManager.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+    - path: ProjectSettings\XRSettings.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\XRSettings.asset
+      projectPath: ..\ProjectSettings\XRSettings.asset
+      originalPath: 
+      indexStatus: 4
+      workTreeStatus: 0
+  - commitID: 8c651ee8bd0c812d09c996385be91e95bbfdd862
+    mergeA: 
+    mergeB: 
+    authorName: Pokemon-Catcher
+    authorEmail: 30660309+Pokemon-Catcher@users.noreply.github.com
+    commitEmail: 30660309+Pokemon-Catcher@users.noreply.github.com
+    commitName: Pokemon-Catcher
+    summary: update
+    description: 
+    timeString: 2019-09-21T18:02:57.000+06:00
+    commitTimeString: 2019-09-21T18:02:57.000+06:00
+    changes:
+    - path: .gitignore
+      fullPath: C:\IneedIt\MyProject\Game\RTS\.gitignore
+      projectPath: ..\.gitignore
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\branches.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: 2015b8bc1816afac1850137fc45ac83f67e5dd85
     mergeA: 
     mergeB: 

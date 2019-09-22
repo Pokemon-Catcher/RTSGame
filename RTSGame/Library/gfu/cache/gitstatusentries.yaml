@@ -13,18 +13,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-09-21T18:02:43.908+06:00
-  initializedAtString: 2019-09-21T18:01:41.000+06:00
+  lastUpdatedAtString: 2019-09-22T23:06:37.967+06:00
+  initializedAtString: 2019-09-22T22:54:35.467+06:00
   entries:
-  - path: .gitignore
-    fullPath: C:\IneedIt\MyProject\Game\RTS\.gitignore
-    projectPath: ..\.gitignore
+  - path: RTSGame\Library\CurrentLayout-default.dwlt
+    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\CurrentLayout-default.dwlt
+    projectPath: Library\CurrentLayout-default.dwlt
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
   - path: RTSGame\Library\gfu\cache\branches.yaml
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: RTSGame\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
@@ -43,6 +49,18 @@ MonoBehaviour:
   - path: RTSGame\Library\gfu\cache\gittrackingstatus.yaml
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: RTSGame\Library\gfu\cache\gituser.yaml
+    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gituser.yaml
+    projectPath: Library\gfu\cache\gituser.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: RTSGame\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3
