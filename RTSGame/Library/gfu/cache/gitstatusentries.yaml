@@ -13,15 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-09-22T23:06:37.967+06:00
+  lastUpdatedAtString: 2019-09-22T23:10:06.937+06:00
   initializedAtString: 2019-09-22T22:54:35.467+06:00
   entries:
-  - path: RTSGame\Library\CurrentLayout-default.dwlt
-    fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\CurrentLayout-default.dwlt
-    projectPath: Library\CurrentLayout-default.dwlt
-    originalPath: 
-    indexStatus: 0
-    workTreeStatus: 3
   - path: RTSGame\Library\gfu\cache\branches.yaml
     fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
@@ -63,4 +57,4 @@ MonoBehaviour:
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     indexStatus: 0
-    workTreeStatus: 3
+    workTreeStatus: 5

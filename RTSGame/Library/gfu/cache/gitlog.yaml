@@ -13,9 +13,159 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 3
-  lastUpdatedAtString: 2019-09-22T23:06:22.611+06:00
+  lastUpdatedAtString: 2019-09-22T23:13:56.407+06:00
   initializedAtString: 2019-09-22T23:00:02.196+06:00
   log:
+  - commitID: 7ea5c697f8b3d4f561158ee4b22fecacd5708044
+    mergeA: 
+    mergeB: 
+    authorName: Pokemon-Catcher
+    authorEmail: 30660309+Pokemon-Catcher@users.noreply.github.com
+    commitEmail: 30660309+Pokemon-Catcher@users.noreply.github.com
+    commitName: Pokemon-Catcher
+    summary: Revert "added event agregator with his testings"
+    description: This reverts commit b886a7386922812bc6a7293276eb1ee9c4523c19.
+    timeString: 2019-09-22T23:09:26.000+06:00
+    commitTimeString: 2019-09-22T23:09:26.000+06:00
+    changes:
+    - path: Assets\Scripts\EventAggregator.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator.meta
+      projectPath: ..\Assets\Scripts\EventAggregator.meta
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\EventAggregator\EventAggregator.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator\EventAggregator.cs
+      projectPath: ..\Assets\Scripts\EventAggregator\EventAggregator.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\EventAggregator\EventAggregator.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator\EventAggregator.cs.meta
+      projectPath: ..\Assets\Scripts\EventAggregator\EventAggregator.cs.meta
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\EventAggregator\Events.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator\Events.cs
+      projectPath: ..\Assets\Scripts\EventAggregator\Events.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\EventAggregator\Events.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator\Events.cs.meta
+      projectPath: ..\Assets\Scripts\EventAggregator\Events.cs.meta
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\EventAggregator\IEventBase.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator\IEventBase.cs
+      projectPath: ..\Assets\Scripts\EventAggregator\IEventBase.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\EventAggregator\IEventBase.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\EventAggregator\IEventBase.cs.meta
+      projectPath: ..\Assets\Scripts\EventAggregator\IEventBase.cs.meta
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\TestPublisher.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\TestPublisher.cs
+      projectPath: ..\Assets\Scripts\TestPublisher.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\TestPublisher.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\TestPublisher.cs.meta
+      projectPath: ..\Assets\Scripts\TestPublisher.cs.meta
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\TestSubscriber.cs
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\TestSubscriber.cs
+      projectPath: ..\Assets\Scripts\TestSubscriber.cs
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Scripts\TestSubscriber.cs.meta
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Scripts\TestSubscriber.cs.meta
+      projectPath: ..\Assets\Scripts\TestSubscriber.cs.meta
+      originalPath: 
+      indexStatus: 5
+      workTreeStatus: 0
+    - path: Assets\Watafak.unity
+      fullPath: C:\IneedIt\MyProject\Game\RTS\Assets\Watafak.unity
+      projectPath: ..\Assets\Watafak.unity
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: ProjectSettings\TagManager.asset
+      fullPath: C:\IneedIt\MyProject\Game\RTS\ProjectSettings\TagManager.asset
+      projectPath: ..\ProjectSettings\TagManager.asset
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+  - commitID: b342bc6bf260785f3a9b21366b32aa6bb62dfda0
+    mergeA: 
+    mergeB: 
+    authorName: Pokemon-Catcher
+    authorEmail: 30660309+Pokemon-Catcher@users.noreply.github.com
+    commitEmail: 30660309+Pokemon-Catcher@users.noreply.github.com
+    commitName: Pokemon-Catcher
+    summary: test
+    description: 
+    timeString: 2019-09-22T23:07:28.000+06:00
+    commitTimeString: 2019-09-22T23:07:28.000+06:00
+    changes:
+    - path: RTSGame\Library\CurrentLayout-default.dwlt
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\CurrentLayout-default.dwlt
+      projectPath: Library\CurrentLayout-default.dwlt
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\branches.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\branches.yaml
+      projectPath: Library\gfu\cache\branches.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gitlocks.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitlocks.yaml
+      projectPath: Library\gfu\cache\gitlocks.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gitlog.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitlog.yaml
+      projectPath: Library\gfu\cache\gitlog.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gitstatusentries.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gitstatusentries.yaml
+      projectPath: Library\gfu\cache\gitstatusentries.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gittrackingstatus.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gittrackingstatus.yaml
+      projectPath: Library\gfu\cache\gittrackingstatus.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\gituser.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\gituser.yaml
+      projectPath: Library\gfu\cache\gituser.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
+    - path: RTSGame\Library\gfu\cache\repoinfo.yaml
+      fullPath: C:\IneedIt\MyProject\Game\RTS\RTSGame\Library\gfu\cache\repoinfo.yaml
+      projectPath: Library\gfu\cache\repoinfo.yaml
+      originalPath: 
+      indexStatus: 3
+      workTreeStatus: 0
   - commitID: b886a7386922812bc6a7293276eb1ee9c4523c19
     mergeA: 
     mergeB: 

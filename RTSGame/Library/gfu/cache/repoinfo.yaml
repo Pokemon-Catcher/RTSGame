@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-09-22T23:06:29.612+06:00
+  lastUpdatedAtString: 2019-09-22T23:10:06.624+06:00
   initializedAtString: 2019-09-22T22:54:35.458+06:00
   currentGitRemote:
     name: origin
