@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Unit : RTSObject
+public class Unit : RTSObject, IDestructable, IItemDropable
 {
     [System.Serializable]
     protected struct Bounty
     {
-        public string resource;
+        public ResourceTypes resource;
         public int count;
 
-        public Bounty(string resource, int count)
+        public Bounty(ResourceTypes resource, int count)
         {
             this.resource = resource;
             this.count = count;
@@ -99,6 +99,10 @@ public class Unit : RTSObject
     [SerializeField]
     protected Sprite icon;
 
+    public int Health { get; set; }
+
+    public List<Item> Items { get; set; }
+
     //protected Owner ??
 
     public override void Awake()
@@ -109,5 +113,15 @@ public class Unit : RTSObject
     public override void Start()
     {
         base.Start();
+    }
+
+    public void TakeDamage(int count)
+    {
+
+    }
+
+    public void DropItem()
+    {
+
     }
 }

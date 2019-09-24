@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100050, guid: ba24e610e0a338545b447ff44a3cf1cc, type: 3}
       propertyPath: m_TagString
-      value: Unit
+      value: RTSObject
       objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: ba24e610e0a338545b447ff44a3cf1cc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -292,11 +292,7 @@ MonoBehaviour:
   bounties: []
   attacks: []
   movements: []
-  costs:
-  - type: 0
-    count: 50
-  - type: 1
-    count: 20
+  costs: []
   armor:
     type: 0
     count: 0
@@ -438,7 +434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 14a74228911217841899a861b82842a5, type: 3}
       propertyPath: m_TagString
-      value: Unit
+      value: RTSObject
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 14a74228911217841899a861b82842a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -505,6 +501,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 6.6410985, y: 5.2959733, z: 7.220866}
   m_Center: {x: -0.46491766, y: 2.6479867, z: -0.3913207}
+--- !u!114 &778680041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778680035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5992dc0d02f0114ca19fed37236ad2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  selected: 0
 --- !u!1 &1286286360
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +583,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: ec69d4cf407e0c9419f1eebf6eebaddd, type: 3}
       propertyPath: m_Name
       value: barracks_atlas (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ec69d4cf407e0c9419f1eebf6eebaddd, type: 3}
+      propertyPath: m_TagString
+      value: RTSObject
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ec69d4cf407e0c9419f1eebf6eebaddd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -778,6 +792,11 @@ PrefabInstance:
     - target: {fileID: 2614136403621430781, guid: 28ec508d73b510442abe450160f60fb3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2614136403621430782, guid: 28ec508d73b510442abe450160f60fb3,
+        type: 3}
+      propertyPath: enable
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
