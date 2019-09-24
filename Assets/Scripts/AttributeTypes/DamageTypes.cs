@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IUnitAbilities
+public enum DamageTypes : byte
 {
-    void MakeMove(Vector3 point);
+    Darkness,
+    Divine,
+    Normal,
 }

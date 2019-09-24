@@ -5,8 +5,8 @@ using EventAggregation;
 
 public abstract class RTSObject : MonoBehaviour
 {
-    protected float health;
-    protected float armor;
+    [SerializeField]
+    protected string Name;
 
     [SerializeField]
     protected bool selected;
