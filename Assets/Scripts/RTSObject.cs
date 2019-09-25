@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using EventAggregation;
 
-public abstract class RTSObject : MonoBehaviour
+public class RTSObject : MonoBehaviour
 {
+    [SerializeField]
+    public Collider visibilityBlocker;
+
     [SerializeField]
     protected string Name;
 
