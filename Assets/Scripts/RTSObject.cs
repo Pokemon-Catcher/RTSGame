@@ -11,10 +11,8 @@ public abstract class RTSObject : MonoBehaviour
     [SerializeField]
     protected bool selected;
 
-    public virtual void Awake()
+    protected virtual void Awake()
     {
-        //GameMode.getInstance().Units.Add(gameObject);
-        Debug.Log(GameMode.getInstance() == null);
         EventAggregator.Subscribe<SelectEvent>(OnSelect);
         EventAggregator.Subscribe<MultiSelectEvent>(OnMultiSelect);
         EventAggregator.Subscribe<DeselectEvent>(OnDeselect);
@@ -62,7 +60,29 @@ public abstract class RTSObject : MonoBehaviour
         }
     }
 
-    public virtual void Start()
-    { 
+    protected virtual void Start()
+    {
+        GameMode.instance.RTSObjects.Add(this);
+    }
+
+    protected virtual void Update()
+    {
+
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if(collider.tag == "Constructing")
+        {
+            _TConstrBuild.instance.intersects++;
+        }
+    }
+
+    void OnTriggerExit(Collider collider)
+    {
+        if(collider.tag == "Constructing")
+        {
+            _TConstrBuild.instance.intersects--;
+        }
     }
 }

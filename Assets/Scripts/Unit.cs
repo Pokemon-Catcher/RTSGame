@@ -105,14 +105,16 @@ public class Unit : RTSObject, IDestructable, IItemDropable
 
     //protected Owner ??
 
-    public override void Awake()
+    protected override void Awake()
     {
         base.Awake();
+
     }
 
-    public override void Start()
+    protected override void Start()
     {
         base.Start();
+        GameMode.instance.Units.Add(this);
     }
 
     public void TakeDamage(int count)
@@ -123,5 +125,10 @@ public class Unit : RTSObject, IDestructable, IItemDropable
     public void DropItem()
     {
 
+    }
+
+    protected override void Update()
+    {
+        base.Update();
     }
 }

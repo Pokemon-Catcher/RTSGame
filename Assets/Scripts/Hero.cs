@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : RTSObject, IDestructable
+public class Hero : Unit
 {
-    public int Health { get; set; }
-
     protected override void Awake()
     {
         base.Awake();
@@ -19,14 +17,9 @@ public class Item : RTSObject, IDestructable
 
     }
 
+    // Update is called once per frame
     protected override void Update()
     {
-        base.Update();
-
-    }
-
-    public void TakeDamage(int count)
-    {
-
+        base.Start();
     }
 }

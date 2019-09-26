@@ -4,33 +4,35 @@ using UnityEngine;
 
 public class GameMode : MonoBehaviour
 {
-    private static GameMode instance;
+    [SerializeField]
+    public static GameMode instance = null;
 
     [SerializeField]
-    private List<GameObject> units = new List<GameObject>();
-    public List<GameObject> Units { get; }
-
-    private GameMode()
+    private List<Building> buildings = new List<Building>();
+    public List<Building> Buildings
     {
-
+        get { return buildings; }
     }
 
-    public static GameMode getInstance()
+    [SerializeField]
+    private List<Unit> units = new List<Unit>();
+    public List<Unit> Units
+    {
+        get { return units; }
+    }
+
+    [SerializeField]
+    private List<RTSObject> rtsObjects = new List<RTSObject>();
+    public List<RTSObject> RTSObjects
+    {
+        get { return rtsObjects; }
+    }
+
+    void Awake()
     {
         if (instance == null)
-            instance = new GameMode();
-        return instance;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+            instance = this;
+        else if (instance == this)
+            Destroy(gameObject);
     }
 }
