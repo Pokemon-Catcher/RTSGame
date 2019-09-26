@@ -16,6 +16,8 @@ public class RTSPlayer : MonoBehaviour
     private Color black= new Color(0, 0, 0, 0);
     private Color white = new Color(1, 1, 1, 1);
     public int minimapSize=128;
+    private float minimapUpdateFrequency=0.1f;
+    private float minimapUpdateTimer = 0f;
     void Awake()
     { 
         visibilityMap = new Texture2D(minimapSize, minimapSize);
@@ -49,7 +51,6 @@ public class RTSPlayer : MonoBehaviour
             exploredMap.SetPixel(i % visibilityMap.width, i / visibilityMap.width, pixel.a < pixels[i].a ? pixel : pixels[i]);
             yield return null;
         }
-        exploredMap.Apply();
         minimapUpdateRun();
     }
 
@@ -61,55 +62,27 @@ public class RTSPlayer : MonoBehaviour
         public IEnumerator visionUpdate(List<Vector3> points, Vector3 sender, float viewDistance)
     {
         Color[] pixels = visibilityMap.GetPixels();
-        List<Vector2> angleDistance = new List<Vector2>();
-        for (int j = 0; j < points.Count; j++)
-        {
-            angleDistance.Add(new Vector2(Vector2.Angle(sender, points[j]),Vector2.Distance(sender, points[j])));
-        }
         int row = 0;
         for (int i = 0; i < pixels.Length; i++)
         {
             row++;
-            Color pixel=white;
+            Color pixel=black;
             int x = i % visibilityMap.width;
             int y = i / visibilityMap.width;
             Vector2 minPoint = new Vector2(x, y);
             float distance = Vector3.Distance(MinimapToWorldPoint(minPoint, sender.y), sender);
-            if (distance > viewDistance) {
-                pixel = black;
-            } else 
-            {
-                Vector2 senderOnMinimap = WorldToMinimapPoint(sender);
-                float angle = Vector2.Angle(senderOnMinimap, minPoint);
-                float difference =  angleDistance[0].x - angle;
-                Vector2 first;
-                Vector2 second;
-                int direction = (int)Mathf.Sign(difference);
-                int j = 0;
-                do
+            if (distance < viewDistance) {
+                for (int j = 0; j < points.Count; j ++)
                 {
-                    j = j+direction;
-                    if (j < 0) j = angleDistance.Count + j;
-                    difference = angleDistance[j].x- angle;
-                    direction= (int)Mathf.Sign(difference); 
-                    if(direction>=0)
-                    {
-                        first = angleDistance[j];
-                        second = angleDistance[(j+1)%angleDistance.Count];
+                    if (IsPointInTri(MinimapToWorldPoint(minPoint, 0), sender, points[j], points[(j + 1) % points.Count])) {
+                        Color color = new Color(j % 2, (j % 3) / 3, (j % 5) / 5);
+                        Debug.DrawLine(points[j], points[(j + 1) % points.Count], color, 1);
+                        Debug.DrawLine(points[(j + 1) % points.Count], sender, color, 1);
+                        Debug.DrawLine(points[j], sender, color, 1);
+                        pixel = white;
                         break;
                     }
-                    yield return null;
-                } while (true);
-                if (distance < Mathf.Lerp(first.y, second.y, first.x != second.x ? (Mathf.Abs((angle - second.x) / (first.x - second.x))) : 0))
-                {
-                    pixel = white;
-                }
-                else
-                {
-                    pixel = black;
-                    Debug.DrawLine(sender, points[j], Color.blue, 1f);
-                    Debug.DrawLine(sender, points[(j + 1) % angleDistance.Count], Color.red, 1f);
-                }
+                } 
             }
             visibilityMap.SetPixel(x, y, pixel);
             if (row >= visibilityMap.width) {
@@ -117,7 +90,22 @@ public class RTSPlayer : MonoBehaviour
                 yield return null;
             }
         }
-        visibilityMap.Apply();
+    }
+
+    float Sign(Vector3 p1, Vector3 p2, Vector3 p3)
+    {
+        return (p1.x - p3.x) * (p2.z - p3.z) - (p2.x - p3.x) * (p1.z - p3.z);
+    }
+
+    bool IsPointInTri(Vector3 pt, Vector3 v1, Vector3 v2, Vector3 v3)
+    {
+        bool b1, b2, b3;
+
+        b1 = Sign(pt, v1, v2) < 0.0f;
+        b2 = Sign(pt, v2, v3) < 0.0f;
+        b3 = Sign(pt, v3, v1) < 0.0f;
+
+        return ((b1 == b2) && (b2 == b3));
     }
 
 
@@ -129,5 +117,16 @@ public class RTSPlayer : MonoBehaviour
     public Vector3 MinimapToWorldPoint(Vector2 minimapPoint, float y)
     {
         return new Vector3((minimapPoint.x - visibilityMap.width / 2) * 100/visibilityMap.width, y, (minimapPoint.y- visibilityMap.height / 2) * 100 / visibilityMap.height);
+    }
+
+    private void Update()
+    {
+        minimapUpdateTimer += Time.deltaTime;
+        if (minimapUpdateTimer > minimapUpdateFrequency)
+        {
+            visibilityMap.Apply();
+            exploredMap.Apply();
+            minimapUpdateTimer = 0;
+        }
     }
 }
