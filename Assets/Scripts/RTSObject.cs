@@ -33,7 +33,7 @@ public abstract class RTSObject : MonoBehaviour
             if (z > StartSelectingPoint.z && z < EndSelectingPoint.z || (z < StartSelectingPoint.z && z > EndSelectingPoint.z))
             {
                 selected = true;
-                Debug.Log("I'm multiselected: " + gameObject.name);
+                
             }
         }
     }
@@ -45,7 +45,7 @@ public abstract class RTSObject : MonoBehaviour
         if(select.hit.collider.gameObject == gameObject)
         {
             selected = true;
-            Debug.Log("I'm selected: " + gameObject.name);
+            
         }
     }
 
@@ -56,7 +56,7 @@ public abstract class RTSObject : MonoBehaviour
         if(ev != null)
         {
             selected = false;
-            Debug.Log("I'm deselected: " + gameObject.name);
+            
         }
     }
 
@@ -68,21 +68,5 @@ public abstract class RTSObject : MonoBehaviour
     protected virtual void Update()
     {
 
-    }
-
-    void OnTriggerEnter(Collider collider)
-    {
-        if(collider.tag == "Constructing")
-        {
-            _TConstrBuild.instance.intersects++;
-        }
-    }
-
-    void OnTriggerExit(Collider collider)
-    {
-        if(collider.tag == "Constructing")
-        {
-            _TConstrBuild.instance.intersects--;
-        }
     }
 }

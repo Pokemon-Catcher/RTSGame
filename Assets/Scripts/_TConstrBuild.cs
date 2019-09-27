@@ -6,6 +6,8 @@ public class _TConstrBuild : MonoBehaviour
 {
     public static _TConstrBuild instance = null;
     private GameObject building = null;
+    private GameObject ghost = null;
+    private bool locker = false;
 
     //raycasting
     private Camera cam;
@@ -32,45 +34,43 @@ public class _TConstrBuild : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (building != null)
+        if (ghost != null)
         {
             ray = cam.ScreenPointToRay(Input.mousePosition);
 
             if (Physics.Raycast(ray, out hit, 200.0f, 1 << 8))
             {
-                building.transform.position = hit.point;
+                ghost.transform.position = hit.point;
             }
 
             if (Input.GetMouseButtonDown(0) && intersects == 0)
             {
-                building.tag = "RTSObject";
-                building = null;
-                ChangeTriggerState(false);
+                Instantiate(building, ghost.transform.position, Quaternion.identity);
+                Destroy(ghost);
+                locker = false;
             }
 
             if (Input.GetMouseButtonDown(1))
             {
-                Destroy(building);
-                ChangeTriggerState(false);
+                Destroy(ghost);
+                building = null;
+                locker = false;
             }
-        }
-    }
-
-    void ChangeTriggerState(bool state)
-    {
-        for (int i = 0; i < GameMode.instance.RTSObjects.Count; ++i)
-        { 
-            GameMode.instance.RTSObjects[i].gameObject.GetComponent<Collider>().isTrigger = state;
         }
     }
 
     public void Construct(GameObject building)
     {
-        ChangeTriggerState(true);
+        if (!locker && building != null)
+        {
+            locker = true;
+            this.building = building;
+            GameObject ghost = this.building.GetComponent<Building>().GhostBuilding;
+            this.building.GetComponent<Building>().SetMesh(this.building.GetComponent<MeshFilter>().sharedMesh);
+            ghost.transform.rotation = this.building.transform.rotation;
 
-        if (building != null)
-            this.building = (GameObject)Instantiate(building);
-
-        this.building.tag = "Constructing";
+            if (ghost != null)
+                this.ghost = (GameObject)Instantiate(ghost);
+        }
     }
 }
