@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
@@ -14,9 +15,14 @@ public class Minimap : MonoBehaviour
     private Color white = new Color(1, 1, 1, 1);
     public int minimapSize = 128;
     
+
+
     [SerializeField]
     private RTSPlayer player;
-    List<UnitVisionInfo> unitsVisionInfo = new List<UnitVisionInfo>();
+
+    int[,] visionMatrix;
+    int[,] exploredMatrix;
+
     [SerializeField]
     private float minimapUpdateFrequency = 0.1f;
     private float minimapUpdateTimer = 0f;
@@ -26,31 +32,13 @@ public class Minimap : MonoBehaviour
 
     private void Awake()
     {
+        visionMatrix = new int[minimapSize,minimapSize];
+        exploredMatrix = new int[minimapSize, minimapSize];
+
         visibilityMap = new Texture2D(minimapSize, minimapSize);
         exploredMap = new Texture2D(minimapSize, minimapSize);
-        MinimapClear();
-        ApplyMinimapChanges();
         rawImage.material.SetTexture("_exploredTexture", exploredMap);
         rawImage.material.SetTexture("_visibleTexture", visibilityMap);
-        ExploredMinimapUpdateRun();
-    }
-
-
-    private async void ExploredMinimapUpdateRun()
-    {
-        await Task.Run(()=>ExploredMinimapUpdate());
-    }
-
-    private void MinimapClear()
-    {
-        for (int i = 0; i < minimapSize; i++)
-        {
-            for (int j = 0; j < minimapSize; j++)
-            {
-                visibilityMap.SetPixel(i, j, black);
-                exploredMap.SetPixel(i, j, black);
-            }
-        }
     }
 
     private void ApplyMinimapChanges()
@@ -59,50 +47,39 @@ public class Minimap : MonoBehaviour
         exploredMap.Apply();
     }
 
-    private void ExploredMinimapUpdate()
+    private void ExploredMatrixUpdate()
     {
-        Color[] pixels = visibilityMap.GetPixels();
-        for (int i = 0; i < pixels.Length; i++)
+        //Color[] pixels = visibilityMap.GetPixels();
+        for (int i = 0; i < minimapSize; i++)
         {
-            Color pixel = exploredMap.GetPixel(i % visibilityMap.width, i / visibilityMap.width);
-            exploredMap.SetPixel(i % visibilityMap.width, i / visibilityMap.width, pixel.r < pixels[i].r ? pixel : pixels[i]);
-            Debug.Log(pixel.r < pixels[i].r ? pixel : pixels[i]);
+            for (int j = 0; j < minimapSize; j++)
+            {
+                exploredMatrix[i, j] |= visionMatrix[i, j];
+            }
+            //Color pixel = exploredMap.GetPixel(i % visibilityMap.width, i / visibilityMap.width);
+            //exploredMap.SetPixel(i % visibilityMap.width, i / visibilityMap.width, pixel.r < pixels[i].r ? pixel : pixels[i]);
+            //Debug.Log(pixel.r < pixels[i].r ? pixel : pixels[i]);
         }
     }
 
-    public async void VisionUpdateAsync()
+    public void VisionUpdate()
     {
-        Debug.Log("VisionUpdateAsyncBEGIN");
-        List<Task<UnitVisionInfo>> unitVisionGetters = new List<Task<UnitVisionInfo>>();
+        visionMatrix = new int[minimapSize, minimapSize];
         foreach (Unit unit in player.units) {
-            Task<UnitVisionInfo> unitVisionGetter = Task.Run(unit.GetVisionInfo);
-            unitVisionGetters.Add(unitVisionGetter);
+            VisionMatrixUpdate(unit.unitVisionInfo);
         }
-        Debug.Log("unitVisionGetters");
-        await Task.WhenAll(unitVisionGetters);
-        Debug.Log("unitVisionGettersEND");
-        List<Task> visionUpdates = new List<Task>();
-        Debug.Log("visionUpdates");
-        foreach (Task<UnitVisionInfo> unitVisionInfo in unitVisionGetters)
-        {
-            visionUpdates.Add(Task.Run(()=>VisionUpdate(unitVisionInfo.Result)));
-        }
-        await Task.WhenAll(visionUpdates);
-        Debug.Log("visionUpdatesENDS");
-        Debug.Log("VisionUpdateAsyncEND");
     }
 
-    public void VisionUpdate(UnitVisionInfo info)
+    public void VisionMatrixUpdate(UnitVisionInfo info)
     {
-        Debug.Log("VisionUpdateBEGIN");
-        Color[] pixels = visibilityMap.GetPixels();
+        //Color[] pixels = visibilityMap.GetPixels();
         int row = 0;
         Vector3 begin = WorldToMinimapPoint(new Vector3(info.unitPosition.x - info.viewDistance, 0, info.unitPosition.z - info.viewDistance));
         Vector3 end = WorldToMinimapPoint(new Vector3(info.unitPosition.x + info.viewDistance, 0, info.unitPosition.z + info.viewDistance));
         for (int i = (int)(begin.x + begin.y * visibilityMap.width); i < (int)(end.x + end.y * visibilityMap.width); i++)
         {
             row++;
-            Color pixel = black;
+            //Color pixel = black;
             int x = i % visibilityMap.width;
             int y = i / visibilityMap.width;
             Vector2 minPoint = new Vector2(x, y);
@@ -113,14 +90,31 @@ public class Minimap : MonoBehaviour
                 {
                     if (IsPointInTri(MinimapToWorldPoint(minPoint, 0), info.unitPosition, info.borderPoints[j], info.borderPoints[(j + 1) % info.borderPoints.Count]))
                     {
-                        pixel = white;
-                        visibilityMap.SetPixel(x, y, pixel);
+
+                        Debug.DrawLine(info.borderPoints[j], info.borderPoints[(j + 1) % info.borderPoints.Count], Color.green, 0.5f);
+                        visionMatrix[x, y] = 1;
+                        //pixel = white;
+                        //visibilityMap.SetPixel(x, y, pixel);
                         break;
                     }
                 }
             }
         }
-        Debug.Log("VisionUpdateEND");
+    }
+
+    void MatrixToMinimapTexture()
+    {
+        //Color[] pixels = visibilityMap.GetPixels();
+        for (int i = 0; i < minimapSize; i++)
+        {
+            for (int j = 0; j < minimapSize; j++)
+            {
+                visibilityMap.SetPixel(i, j, visionMatrix[i, j] == 1?white:black);
+            }
+            //Color pixel = exploredMap.GetPixel(i % visibilityMap.width, i / visibilityMap.width);
+            //exploredMap.SetPixel(i % visibilityMap.width, i / visibilityMap.width, pixel.r < pixels[i].r ? pixel : pixels[i]);
+            //Debug.Log(pixel.r < pixels[i].r ? pixel : pixels[i]);
+        }
     }
 
     float Sign(Vector3 p1, Vector3 p2, Vector3 p3)
@@ -155,8 +149,11 @@ public class Minimap : MonoBehaviour
         minimapUpdateTimer += Time.deltaTime;
         if (minimapUpdateTimer > minimapUpdateFrequency)
         {
-            MinimapClear();
-            VisionUpdateAsync();
+            minimapUpdateTimer = 0;
+            VisionUpdate();
+            MatrixToMinimapTexture();
+            ExploredMatrixUpdate();
+            ApplyMinimapChanges();
         }
     }
 }

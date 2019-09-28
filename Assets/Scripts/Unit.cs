@@ -9,7 +9,7 @@ public class Unit : RTSObject
     private Vector3 previousPosition = Vector3.zero;
 
     private Ray visibility;
-    private UnitVisionInfo unitVisionInfo;
+    public UnitVisionInfo unitVisionInfo;
 
     [System.Serializable]
     protected struct Bounty
@@ -119,14 +119,16 @@ public class Unit : RTSObject
         base.Start();
     }
 
-    private UnitVisionInfo VisionCalculation()
+    private void Update()
     {
-        if (previousPosition == transform.position)
+        VisionCalculation();
+    }
+
+    private void VisionCalculation()
+    {
+        if (previousPosition != transform.position)
         {
-            return unitVisionInfo;
-        }
-        else
-        {
+            previousPosition = transform.position;
             List<Vector3> points = new List<Vector3>();
             List<Vector3> borderPoints = new List<Vector3>();
             Collider[] blockers = Physics.OverlapSphere(transform.position, viewDistance);
@@ -144,15 +146,20 @@ public class Unit : RTSObject
                 points.Add(new Vector3(pos.x - blocker.size.x * blocker.transform.lossyScale.x / 2, transform.position.y, pos.z - blocker.size.z * blocker.transform.lossyScale.z / 2));
                 points.Add(new Vector3(pos.x + blocker.size.x * blocker.transform.lossyScale.x / 2, transform.position.y, pos.z - blocker.size.z * blocker.transform.lossyScale.z / 2));
             }
+            int counter = 0;
             foreach (Vector3 point in points)
             {
+                counter++;
                 visibility.origin = new Vector3(transform.position.x, point.y + 0.1f, transform.position.z);
                 Vector3 original = (point - visibility.origin);
                 original = new Vector3(original.x, 0.1f, original.z).normalized;
                 float angle = 10 / original.magnitude;
                 for (float i = -angle; i <= angle; i += angle)
                 {
-                    visibility.direction = Quaternion.Euler(0, i, 0) * original;
+                    if (angle != 0)
+                        visibility.direction = Quaternion.Euler(0, i, 0) * original;
+                    else
+                        visibility.direction = original;
                     RaycastHit rh;
                     if (!Physics.Raycast(visibility, out rh, viewDistance))
                     {
@@ -169,15 +176,7 @@ public class Unit : RTSObject
             borderPoints.Sort(new ReverserClass(transform.position));
             //if (!(Owner is null)) Owner.minimap.VisionUpdateRun(borderPoints, transform.position, viewDistance);
             unitVisionInfo = new UnitVisionInfo(borderPoints, transform.position, viewDistance);
-            return unitVisionInfo;
         }
-    }
-
-    public async Task<UnitVisionInfo> GetVisionInfo()
-    {
-        Debug.Log("GetVisionInfo");
-        return await Task.FromResult(VisionCalculation());
-        //StartVisionCheck();
     }
 
     public class ReverserClass : IComparer<Vector3>
@@ -190,11 +189,7 @@ public class Unit : RTSObject
 
         int IComparer<Vector3>.Compare(Vector3 x, Vector3 y)
         {
-            float angle1 = Vector2.SignedAngle(origin, new Vector2(x.x, x.z));
-            float angle2 = Vector2.SignedAngle(origin, new Vector2(y.x, y.z));
-            if (angle1 > angle2) return 1;
-            else if (angle1 < angle2) return -1;
-            return 0;
+            return Mathf.Atan2(origin.x-x.x, origin.y - x.z).CompareTo(Mathf.Atan2(origin.x - y.x, origin.y - y.z));
         }
     }
 }

@@ -154,8 +154,8 @@ MonoBehaviour:
   rawImage: {fileID: 1983597004}
   minimapSize: 128
   player: {fileID: 2102988324}
-  minimapUpdateFrequency: 0.05
-  visionUpdateFrequency: 0.05
+  minimapUpdateFrequency: 0.5
+  visionUpdateFrequency: 1
 --- !u!4 &152615625
 Transform:
   m_ObjectHideFlags: 0
