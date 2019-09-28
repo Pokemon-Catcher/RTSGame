@@ -18,8 +18,8 @@ public class FogOfWar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        vision = player.visibilityMap;
-        exploration = player.exploredMap;
+        vision = player.minimap.visibilityMap;
+        exploration = player.minimap.exploredMap;
         projector.material.SetTexture("_visibleArea", vision);
         projector.material.SetTexture("_exploredArea", exploration);
     }

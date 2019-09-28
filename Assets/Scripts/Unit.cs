@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class Unit : RTSObject
 {
+    private Vector3 previousPosition = Vector3.zero;
+
     private Ray visibility;
+    private UnitVisionInfo unitVisionInfo;
 
     [System.Serializable]
     protected struct Bounty
@@ -107,7 +111,7 @@ public class Unit : RTSObject
     public override void Awake()
     {
         base.Awake();
-        StartVisionCheck();
+        if (!(Owner is null)) Owner.units.Add(this);
     }
 
     public override void Start()
@@ -115,62 +119,67 @@ public class Unit : RTSObject
         base.Start();
     }
 
-    protected void StartVisionCheck()
+    private UnitVisionInfo VisionCalculation()
     {
-        StopCoroutine("Vision");
-        StartCoroutine("Vision");
-    }
-
-    protected IEnumerator Vision()
-    {
-        List<Vector3> points=new List<Vector3>();
-        List<Vector3> borderPoints = new List<Vector3>();
-        Collider[] blockers= Physics.OverlapSphere(transform.position, viewDistance);
-        points.Add(new Vector3(transform.position.x + viewDistance, 0, transform.position.z - viewDistance));
-        points.Add(new Vector3(transform.position.x + viewDistance, 0, transform.position.z + viewDistance));
-        points.Add(new Vector3(transform.position.x - viewDistance, 0, transform.position.z + viewDistance));
-        points.Add(new Vector3(transform.position.x - viewDistance, 0, transform.position.z - viewDistance));
-        foreach (Collider block in blockers)
+        if (previousPosition == transform.position)
         {
-            BoxCollider blocker = block.transform.GetComponent<BoxCollider>();
-            if (blocker is null || (!(visibilityBlocker is null ) && blocker.gameObject.Equals(gameObject))) continue;
-            Vector3 pos = blocker.transform.position;
-            points.Add(new Vector3(pos.x + blocker.size.x * blocker.transform.lossyScale.x / 2, pos.y, pos.z + blocker.size.z * blocker.transform.lossyScale.z / 2));
-            points.Add(new Vector3(pos.x - blocker.size.x * blocker.transform.lossyScale.x / 2, pos.y, pos.z + blocker.size.z * blocker.transform.lossyScale.z / 2));
-            points.Add(new Vector3(pos.x - blocker.size.x * blocker.transform.lossyScale.x / 2, pos.y, pos.z - blocker.size.z * blocker.transform.lossyScale.z / 2));
-            points.Add(new Vector3(pos.x + blocker.size.x * blocker.transform.lossyScale.x / 2, pos.y, pos.z - blocker.size.z * blocker.transform.lossyScale.z / 2));
-            yield return null;
+            return unitVisionInfo;
         }
-        foreach(Vector3 point in points)
+        else
         {
-            visibility.origin = new Vector3(transform.position.x, point.y+0.1f, transform.position.z);
-            Vector3 original = (point - visibility.origin);
-            original = new Vector3(original.x, 0.1f, original.z).normalized;
-            float angle = 1/original.magnitude;
-            for (float i = -angle; i <= angle; i += angle) {
-                visibility.direction = Quaternion.Euler(0, i, 0) * original;
-                RaycastHit rh;
-                if(!Physics.Raycast(visibility, out rh, viewDistance)) {
-                    borderPoints.Add(visibility.GetPoint(viewDistance* 1.41421356237f));
-                    //Debug.DrawLine(visibility.origin, visibility.GetPoint(viewDistance), Color.green, 1);
-                }
-                else {
-                    borderPoints.Add(rh.point);
-                    //Debug.DrawLine(visibility.origin, rh.point,Color.green,1);
+            List<Vector3> points = new List<Vector3>();
+            List<Vector3> borderPoints = new List<Vector3>();
+            Collider[] blockers = Physics.OverlapSphere(transform.position, viewDistance);
+            points.Add(new Vector3(transform.position.x + viewDistance, transform.position.y, transform.position.z - viewDistance));
+            points.Add(new Vector3(transform.position.x + viewDistance, transform.position.y, transform.position.z + viewDistance));
+            points.Add(new Vector3(transform.position.x - viewDistance, transform.position.y, transform.position.z + viewDistance));
+            points.Add(new Vector3(transform.position.x - viewDistance, transform.position.y, transform.position.z - viewDistance));
+            foreach (Collider block in blockers)
+            {
+                BoxCollider blocker = block.transform.GetComponent<BoxCollider>();
+                if (blocker is null || (!(visibilityBlocker is null) && blocker.gameObject.Equals(gameObject))) continue;
+                Vector3 pos = blocker.transform.position;
+                points.Add(new Vector3(pos.x + blocker.size.x * blocker.transform.lossyScale.x / 2, transform.position.y, pos.z + blocker.size.z * blocker.transform.lossyScale.z / 2));
+                points.Add(new Vector3(pos.x - blocker.size.x * blocker.transform.lossyScale.x / 2, transform.position.y, pos.z + blocker.size.z * blocker.transform.lossyScale.z / 2));
+                points.Add(new Vector3(pos.x - blocker.size.x * blocker.transform.lossyScale.x / 2, transform.position.y, pos.z - blocker.size.z * blocker.transform.lossyScale.z / 2));
+                points.Add(new Vector3(pos.x + blocker.size.x * blocker.transform.lossyScale.x / 2, transform.position.y, pos.z - blocker.size.z * blocker.transform.lossyScale.z / 2));
+            }
+            foreach (Vector3 point in points)
+            {
+                visibility.origin = new Vector3(transform.position.x, point.y + 0.1f, transform.position.z);
+                Vector3 original = (point - visibility.origin);
+                original = new Vector3(original.x, 0.1f, original.z).normalized;
+                float angle = 10 / original.magnitude;
+                for (float i = -angle; i <= angle; i += angle)
+                {
+                    visibility.direction = Quaternion.Euler(0, i, 0) * original;
+                    RaycastHit rh;
+                    if (!Physics.Raycast(visibility, out rh, viewDistance))
+                    {
+                        borderPoints.Add(visibility.GetPoint(viewDistance * 1.41421356237f));
+                        //Debug.DrawLine(visibility.origin, visibility.GetPoint(viewDistance), Color.green, 1);
+                    }
+                    else
+                    {
+                        borderPoints.Add(rh.point);
+                        //Debug.DrawLine(visibility.origin, rh.point,Color.green,1);
+                    }
                 }
             }
-            yield return null;
+            borderPoints.Sort(new ReverserClass(transform.position));
+            //if (!(Owner is null)) Owner.minimap.VisionUpdateRun(borderPoints, transform.position, viewDistance);
+            unitVisionInfo = new UnitVisionInfo(borderPoints, transform.position, viewDistance);
+            return unitVisionInfo;
         }
-        borderPoints.Sort(new ReverserClass(transform.position));
-        int z = 0;
-        foreach(Vector3 point in borderPoints)
-        {
-            z++;
-            Debug.Log(point + " " + z + " "+ Vector3.Angle(point, transform.position));
-        }
-        if (!(Owner is null))Owner.visionUpdateRun(borderPoints, transform.position, viewDistance);
-        StartVisionCheck();
     }
+
+    public async Task<UnitVisionInfo> GetVisionInfo()
+    {
+        Debug.Log("GetVisionInfo");
+        return await Task.FromResult(VisionCalculation());
+        //StartVisionCheck();
+    }
+
     public class ReverserClass : IComparer<Vector3>
     {
         private Vector2 origin;
@@ -181,8 +190,8 @@ public class Unit : RTSObject
 
         int IComparer<Vector3>.Compare(Vector3 x, Vector3 y)
         {
-            float angle1 = Vector2.SignedAngle(origin, new Vector2(x.x, x.z)) + 180;
-            float angle2 = Vector2.SignedAngle(origin, new Vector2(y.x, y.z)) + 180;
+            float angle1 = Vector2.SignedAngle(origin, new Vector2(x.x, x.z));
+            float angle2 = Vector2.SignedAngle(origin, new Vector2(y.x, y.z));
             if (angle1 > angle2) return 1;
             else if (angle1 < angle2) return -1;
             return 0;

@@ -17,7 +17,7 @@ public class RTSObject : MonoBehaviour
     public virtual void Awake()
     {
         //GameMode.getInstance().Units.Add(gameObject);
-        Debug.Log(GameMode.getInstance() == null);
+        //Debug.Log(GameMode.getInstance() == null);
         EventAggregator.Subscribe<SelectEvent>(OnSelect);
         EventAggregator.Subscribe<MultiSelectEvent>(OnMultiSelect);
         EventAggregator.Subscribe<DeselectEvent>(OnDeselect);
