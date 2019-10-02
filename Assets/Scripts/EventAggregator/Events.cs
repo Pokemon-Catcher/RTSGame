@@ -14,7 +14,8 @@ namespace EventAggregation
 
     public class SelectEvent : IEventBase
     {
-        public RaycastHit hit { get; set; } 
+        public RaycastHit hit { get; set; }
+        public RTSObject Rts { get; set; }
     }
 
     public class MultiSelectEvent : IEventBase

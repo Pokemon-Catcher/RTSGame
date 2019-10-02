@@ -2,11 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 using EventAggregation;
+using UnityEngine.UI;
 
 public abstract class RTSObject : MonoBehaviour
 {
     [SerializeField]
-    protected string Name;
+    protected string rtsName;
+    public string Name
+    {
+        get { return rtsName; }
+    }
+
+    protected Image rtsIcon;
+    public Image Icon
+    {
+        get { return rtsIcon; }
+    }
 
     [SerializeField]
     protected bool selected;

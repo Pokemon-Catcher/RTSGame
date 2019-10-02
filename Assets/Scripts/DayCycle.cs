@@ -2,6 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public struct RTSTime
+{
+    public int hours;
+    public int minutes;
+    public int seconds;
+
+    public RTSTime(int hours, int minutes, int seconds)
+    {
+        this.hours = hours;
+        this.minutes = minutes;
+        this.seconds = seconds;
+    }
+}
+
 public class DayCycle : MonoBehaviour
 {
     [Header("Timer")]
@@ -54,23 +69,8 @@ public class DayCycle : MonoBehaviour
 
     private float timeScale;
 
-    [System.Serializable]
-    private struct RTSTime
-    {
-        public int hours;
-        public int minutes;
-        public int seconds;
-
-        public RTSTime(int hours, int minutes, int seconds)
-        {
-            this.hours = hours;
-            this.minutes = minutes;
-            this.seconds = seconds;
-        }
-    }
-
     [SerializeField]
-    private RTSTime time = new RTSTime(0,0,0);
+    public RTSTime time = new RTSTime(0,0,0);
 
     [SerializeField]
     private int fullSeconds;

@@ -62,13 +62,13 @@ public class Unit : RTSObject, IDestructable, IItemDropable
     [System.Serializable]
     protected struct Cost
     {
-        public ResourceTypes type;
-        public int count;
+        public ResourceTypes types;
+        public int cost;
 
-        public Cost(ResourceTypes type, int count)
+        public Cost(ResourceTypes types, int cost)
         {
-            this.type = type;
-            this.count = count;
+            this.types = types;
+            this.cost = cost;
         }
     }
 
