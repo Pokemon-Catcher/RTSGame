@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Unit : RTSObject
+public class Unit : RTSObject, IDestructable, IItemDropable
 {
     private Vector3 previousPosition = Vector3.zero;
 
@@ -14,10 +14,10 @@ public class Unit : RTSObject
     [System.Serializable]
     protected struct Bounty
     {
-        public string resource;
+        public ResourceTypes resource;
         public int count;
 
-        public Bounty(string resource, int count)
+        public Bounty(ResourceTypes resource, int count)
         {
             this.resource = resource;
             this.count = count;
@@ -68,13 +68,13 @@ public class Unit : RTSObject
     [System.Serializable]
     protected struct Cost
     {
-        public ResourceTypes type;
-        public int count;
+        public ResourceTypes types;
+        public int cost;
 
-        public Cost(ResourceTypes type, int count)
+        public Cost(ResourceTypes types, int cost)
         {
-            this.type = type;
-            this.count = count;
+            this.types = types;
+            this.cost = cost;
         }
     }
 
@@ -107,16 +107,37 @@ public class Unit : RTSObject
 
     [SerializeField]
     protected RTSPlayer Owner;
+    public int Health { get; set; }
 
-    public override void Awake()
+    public List<Item> Items { get; set; }
+
+    //protected Owner ??
+
+    protected override void Awake()
     {
         base.Awake();
         if (!(Owner is null)) Owner.units.Add(this);
     }
 
-    public override void Start()
+    protected override void Start()
     {
         base.Start();
+        GameMode.instance.Units.Add(this);
+    }
+
+    public void TakeDamage(int count)
+    {
+
+    }
+
+    public void DropItem()
+    {
+
+    }
+
+    protected override void Update()
+    {
+        base.Update();
     }
 
     private void Update()

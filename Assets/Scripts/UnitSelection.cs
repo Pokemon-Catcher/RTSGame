@@ -103,9 +103,9 @@ public class UnitSelection : MonoBehaviour
 
     private void OneSelect()
     {
-        if (hit.point != Vector3.zero && hit.collider.gameObject.tag == "Unit")
+        if (hit.point != Vector3.zero && hit.collider != null && hit.collider.gameObject.tag == "RTSObject")
         {
-            SelectEvent ev = new SelectEvent { hit = this.hit};
+            SelectEvent ev = new SelectEvent { hit = this.hit, Rts = hit.collider.GetComponent<RTSObject>() };
             EventAggregator.Publish<SelectEvent>(ev);
         }
     }

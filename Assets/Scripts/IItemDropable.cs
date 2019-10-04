@@ -2,17 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IItemDropable : MonoBehaviour
+public interface IItemDropable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    List<Item> Items { get; set; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    void DropItem();
 }
