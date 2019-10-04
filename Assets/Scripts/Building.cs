@@ -32,6 +32,12 @@ public class Building : Unit
         GameMode.instance.Buildings.Add(this);
     }
 
+    public override Dictionary<string, object> GetInfo()
+    {
+
+        return base.GetInfo();
+    }
+
     protected override void Update()
     {
         base.Update();

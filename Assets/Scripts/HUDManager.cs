@@ -31,11 +31,11 @@ public class HUDManager : MonoBehaviour
 
     private bool startHUDUpdate = false;
     private bool startUnitUpdate = false;
-    private SelectEvent ev;
+    private Dictionary<string, object> info;
 
     void Awake()
     {
-        EventAggregator.Subscribe<SelectEvent>(DrawUnitHUD);
+      EventAggregator.Subscribe<SelectEvent>(DrawUnitHUD);
     }
 
     // Start is called before the first frame update
@@ -52,8 +52,12 @@ public class HUDManager : MonoBehaviour
 
     void DrawUnitHUD(IEventBase rts)
     {
-        ev = rts as SelectEvent;
+        SelectEvent ev = rts as SelectEvent;
         //icon = ev.Rts.Icon;
+        ev.Rts.Info.Clear();
+        info = ev.Rts.GetInfo();
+        unitName.text = (string)info["name"];
+
         startUnitUpdate = true;
         UnitHUD.SetActive(true);
     }
@@ -68,7 +72,9 @@ public class HUDManager : MonoBehaviour
 
         if (startUnitUpdate)
         {
-            unitName.text = ev.Rts.Name;
+            health.text = (int)info["health"] + "/" + (int)info["maxHealth"];
+            //if (info.ContainsKey("xp"))
+            //    health.text = ((int)info["xp"]).ToString();
         }
     }
 }

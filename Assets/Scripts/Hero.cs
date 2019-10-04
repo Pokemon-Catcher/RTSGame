@@ -19,7 +19,15 @@ public class Hero : Unit
 
     // Update is called once per frame
     protected override void Update()
+    { 
+
+        base.Update();
+    }
+
+    public override Dictionary<string, object> GetInfo()
     {
-        base.Start();
+        //other props
+        
+        return base.GetInfo();
     }
 }

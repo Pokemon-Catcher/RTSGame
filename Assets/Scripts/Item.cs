@@ -5,6 +5,7 @@ using UnityEngine;
 public class Item : RTSObject, IDestructable
 {
     public int Health { get; set; }
+    public int MaxHealth { get; set; }
 
     protected override void Awake()
     {

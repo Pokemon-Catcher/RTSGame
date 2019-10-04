@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
+using EventAggregation;
 
-public class Unit : RTSObject, IDestructable, IItemDropable
+public class Unit : RTSObject, IDestructable, IItemDropable, ISelectable
 {
     private Vector3 previousPosition = Vector3.zero;
 
@@ -107,22 +108,35 @@ public class Unit : RTSObject, IDestructable, IItemDropable
 
     [SerializeField]
     protected RTSPlayer Owner;
+
+    //props
     public int Health { get; set; }
-
     public List<Item> Items { get; set; }
+    public Dictionary<string, object> Info { get; set; }
 
-    //protected Owner ??
+    public bool Selected { get; set; }
+    public int MaxHealth { get; set; }
+
+    [Range(0, 5)]
+    [SerializeField]
+    private int hp;
 
     protected override void Awake()
     {
         base.Awake();
         if (!(Owner is null)) Owner.units.Add(this);
+
+        EventAggregator.Subscribe<SelectEvent>(OnSelect);
+        EventAggregator.Subscribe<MultiSelectEvent>(OnMultiSelect);
+        EventAggregator.Subscribe<DeselectEvent>(OnDeselect);
     }
 
     protected override void Start()
     {
         base.Start();
         GameMode.instance.Units.Add(this);
+        Info = new Dictionary<string, object>();
+        Items = new List<Item>();
     }
 
     public void TakeDamage(int count)
@@ -138,11 +152,67 @@ public class Unit : RTSObject, IDestructable, IItemDropable
     protected override void Update()
     {
         base.Update();
+        //VisionCalculation();
+        Health = hp;
     }
 
-    private void Update()
+    protected void OnSelect(IEventBase eventBase)
     {
-        VisionCalculation();
+        SelectEvent ev = eventBase as SelectEvent;
+        if(ev != null && ev.hit.collider.gameObject == gameObject)
+        {
+            Selected = true;
+            Debug.Log(Selected);
+        }
+    }
+
+    protected void OnMultiSelect(IEventBase eventBase)
+    {
+        MultiSelectEvent selectEvent = eventBase as MultiSelectEvent;
+
+        float x = transform.position.x;
+        float z = transform.position.z;
+
+        Vector3 StartSelectingPoint = selectEvent.firstCorner;
+        Vector3 EndSelectingPoint = selectEvent.secondCorner;
+
+        if (x > StartSelectingPoint.x && x < EndSelectingPoint.x || (x < StartSelectingPoint.x && x > EndSelectingPoint.x))
+        {
+            if (z > StartSelectingPoint.z && z < EndSelectingPoint.z || (z < StartSelectingPoint.z && z > EndSelectingPoint.z))
+            {
+                Selected = true;
+                Debug.Log(Selected);
+            }
+        }
+    }
+
+    protected void OnDeselect(IEventBase eventBase)
+    {
+        DeselectEvent ev = eventBase as DeselectEvent;
+
+        if(ev != null)
+        {
+            Selected = false;
+            Debug.Log(Selected);
+        }
+    }
+
+    public virtual Dictionary<string, object> GetInfo()
+    {
+       // Debug.Log("dada");
+        //for HUDManager
+        Info.Add("attacks", attacks);
+        Info.Add("movements", movements);
+        Info.Add("armor", armor);
+        Info.Add("abilities", abilities);
+        Info.Add("level", level);
+        Info.Add("icon", icon);
+        Info.Add("health", Health);
+        Info.Add("maxHealth", MaxHealth);
+        Info.Add("items", Items);
+        Info.Add("name", Name);
+
+        return Info;
     }
 
     private void VisionCalculation()

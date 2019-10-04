@@ -5,6 +5,7 @@ using UnityEngine;
 public interface IDestructable
 {
     int Health { get; set; }
+    int MaxHealth { get; set; }
 
     void TakeDamage(int count);
 }
