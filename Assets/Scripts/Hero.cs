@@ -27,7 +27,7 @@ public class Hero : Unit
     public override Dictionary<string, object> GetInfo()
     {
         //other props
-        
+            
         return base.GetInfo();
     }
 }

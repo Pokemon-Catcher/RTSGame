@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections.Generic;
 
 namespace EventAggregation
 {
@@ -15,7 +16,7 @@ namespace EventAggregation
     public class SelectEvent : IEventBase
     {
         public RaycastHit hit { get; set; }
-        public ISelectable Rts { get; set; }
+        public Attributes Attributes { get; set; }
     }
 
     public class MultiSelectEvent : IEventBase

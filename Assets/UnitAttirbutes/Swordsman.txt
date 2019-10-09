@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Unit xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" level="0" viewDistance="0">
+  <bounties />
+  <attacks>
+    <attack>
+      <attack>Range</attack>
+      <type>Darkness</type>
+      <damage>1</damage>
+    </attack>
+  </attacks>
+  <movements />
+  <costs />
+  <armor>
+    <type>Normal</type>
+    <count>0</count>
+  </armor>
+</Unit>

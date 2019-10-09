@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Unit xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" level="0" viewDistance="0">
+  <bounties />
+  <attacks />
+  <movements />
+  <costs />
+  <armor>
+    <type>Heavy</type>
+    <count>228</count>
+  </armor>
+</Unit>

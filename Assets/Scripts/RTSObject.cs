@@ -22,6 +22,8 @@ public class RTSObject : MonoBehaviour
         get { return rtsIcon; }
     }
 
+    protected Dictionary<string, object> info = new Dictionary<string, object>();
+
     protected virtual void Awake()
     {
 
@@ -30,6 +32,15 @@ public class RTSObject : MonoBehaviour
     protected virtual void Start()
     {
         GameMode.instance.RTSObjects.Add(this);
+    }
+
+    public virtual Dictionary<string, object> GetInfo()
+    {
+        //for HUDManager
+        Debug.Log("kek");
+        info.Add("name", Name);
+
+        return info;
     }
 
     protected virtual void Update()

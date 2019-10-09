@@ -102,10 +102,10 @@ public class UnitSelection : MonoBehaviour
     }
 
     private void OneSelect()
-    {
+    {   
         if (hit.point != Vector3.zero && hit.collider != null && hit.collider.gameObject.tag == "RTSObject")
         {
-            SelectEvent ev = new SelectEvent { hit = this.hit, Rts = hit.collider.GetComponent<ISelectable>() };
+            SelectEvent ev = new SelectEvent { hit = this.hit, Attributes = XmlTools.ParseXmlToObject("Assets/UnitAttirbutes/" + hit.collider.GetComponent<RTSObject>().Name + ".txt") };
             EventAggregator.Publish<SelectEvent>(ev);
         }
     }

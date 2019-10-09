@@ -4,139 +4,36 @@ using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.AI;
 using EventAggregation;
+using System.Xml.Serialization;
 
-public class Unit : RTSObject, IDestructable, IItemDropable, ISelectable
+public class Unit : RTSObject, IDestructable, IItemDropable
 {
     private Vector3 previousPosition = Vector3.zero;
-
     private Ray visibility;
+
     public UnitVisionInfo unitVisionInfo;
-
-    [System.Serializable]
-    protected struct Bounty
-    {
-        public ResourceTypes resource;
-        public int count;
-
-        public Bounty(ResourceTypes resource, int count)
-        {
-            this.resource = resource;
-            this.count = count;
-        }
-    }
-
-    [System.Serializable]
-    protected struct Attack
-    {
-        public Attacks attack;
-        public DamageTypes type;
-        public int damage;
-
-        public Attack(Attacks attack, DamageTypes type, int damage)
-        {
-            this.attack = attack;
-            this.type = type;
-            this.damage = damage;
-        }
-    }
-
-    [System.Serializable]
-    protected struct Movement
-    {
-        public MovementTypes type;
-        public float speed;
-
-        public Movement(MovementTypes type, float speed)
-        {
-            this.type = type;
-            this.speed = speed;
-        }
-    }
-
-    [System.Serializable]
-    protected struct Armor
-    {
-        public ArmorTypes type;
-        public float count;
-
-        public Armor(ArmorTypes type, float count)
-        {
-            this.type = type;
-            this.count = count;
-        }
-    }
-
-    [System.Serializable]
-    protected struct Cost
-    {
-        public ResourceTypes types;
-        public int cost;
-
-        public Cost(ResourceTypes types, int cost)
-        {
-            this.types = types;
-            this.cost = cost;
-        }
-    }
-
-    [SerializeField]
-    protected List<Bounty> bounties = new List<Bounty>();
-
-    [SerializeField]
-    protected List<Attack> attacks = new List<Attack>();
-
-    [SerializeField]
-    protected List<Movement> movements = new List<Movement>();
-
-    [SerializeField]
-    protected List<Cost> costs = new List<Cost>();
-
-    [SerializeField]
-    protected Armor armor = new Armor();
-
-    [SerializeField]
-    protected List<Ability> abilities = new List<Ability>();
-
-    [SerializeField]
-    protected int level;
-
-    [SerializeField]
-    protected float viewDistance;
-
-    [SerializeField]
-    protected Sprite icon;
-
-    [SerializeField]
-    protected RTSPlayer Owner;
+    public Attributes attributes = new Attributes();
 
     //props
     public int Health { get; set; }
     public List<Item> Items { get; set; }
-    public Dictionary<string, object> Info { get; set; }
-
-    public bool Selected { get; set; }
     public int MaxHealth { get; set; }
-
-    [Range(0, 5)]
-    [SerializeField]
-    private int hp;
 
     protected override void Awake()
     {
         base.Awake();
-        if (!(Owner is null)) Owner.units.Add(this);
-
-        EventAggregator.Subscribe<SelectEvent>(OnSelect);
-        EventAggregator.Subscribe<MultiSelectEvent>(OnMultiSelect);
-        EventAggregator.Subscribe<DeselectEvent>(OnDeselect);
+        //if (!(attributes.Owner is null)) attributes.Owner.units.Add(this);
     }
 
     protected override void Start()
     {
         base.Start();
         GameMode.instance.Units.Add(this);
-        Info = new Dictionary<string, object>();
         Items = new List<Item>();
+
+        //tools.SerializeToXml(attributes, Name);
+        //tools.ParseXmlToObject("Assets/UnitAttirbutes/lol.txt", ref attributes);
+        XmlTools.SerializeToXml(attributes, Name);
     }
 
     public void TakeDamage(int count)
@@ -153,66 +50,21 @@ public class Unit : RTSObject, IDestructable, IItemDropable, ISelectable
     {
         base.Update();
         //VisionCalculation();
-        Health = hp;
     }
 
-    protected void OnSelect(IEventBase eventBase)
+    public override Dictionary<string, object> GetInfo()
     {
-        SelectEvent ev = eventBase as SelectEvent;
-        if(ev != null && ev.hit.collider.gameObject == gameObject)
-        {
-            Selected = true;
-            Debug.Log(Selected);
-        }
-    }
+        info.Add("attacks", attributes.attacks);
+        info.Add("movements", attributes.movements);
+        info.Add("armor", attributes.armor);
+        //info.Add("abilities", attributes.abilities);
+        info.Add("level", attributes.level);
+        //info.Add("icon", attributes.icon);
+        info.Add("health", Health);
+        info.Add("maxHealth", MaxHealth);
+        info.Add("items", Items);
 
-    protected void OnMultiSelect(IEventBase eventBase)
-    {
-        MultiSelectEvent selectEvent = eventBase as MultiSelectEvent;
-
-        float x = transform.position.x;
-        float z = transform.position.z;
-
-        Vector3 StartSelectingPoint = selectEvent.firstCorner;
-        Vector3 EndSelectingPoint = selectEvent.secondCorner;
-
-        if (x > StartSelectingPoint.x && x < EndSelectingPoint.x || (x < StartSelectingPoint.x && x > EndSelectingPoint.x))
-        {
-            if (z > StartSelectingPoint.z && z < EndSelectingPoint.z || (z < StartSelectingPoint.z && z > EndSelectingPoint.z))
-            {
-                Selected = true;
-                Debug.Log(Selected);
-            }
-        }
-    }
-
-    protected void OnDeselect(IEventBase eventBase)
-    {
-        DeselectEvent ev = eventBase as DeselectEvent;
-
-        if(ev != null)
-        {
-            Selected = false;
-            Debug.Log(Selected);
-        }
-    }
-
-    public virtual Dictionary<string, object> GetInfo()
-    {
-       // Debug.Log("dada");
-        //for HUDManager
-        Info.Add("attacks", attacks);
-        Info.Add("movements", movements);
-        Info.Add("armor", armor);
-        Info.Add("abilities", abilities);
-        Info.Add("level", level);
-        Info.Add("icon", icon);
-        Info.Add("health", Health);
-        Info.Add("maxHealth", MaxHealth);
-        Info.Add("items", Items);
-        Info.Add("name", Name);
-
-        return Info;
+        return base.GetInfo();
     }
 
     private void VisionCalculation()
@@ -222,11 +74,11 @@ public class Unit : RTSObject, IDestructable, IItemDropable, ISelectable
             previousPosition = transform.position;
             List<Vector3> points = new List<Vector3>();
             List<Vector3> borderPoints = new List<Vector3>();
-            Collider[] blockers = Physics.OverlapSphere(transform.position, viewDistance);
-            points.Add(new Vector3(transform.position.x + viewDistance, transform.position.y, transform.position.z - viewDistance));
-            points.Add(new Vector3(transform.position.x + viewDistance, transform.position.y, transform.position.z + viewDistance));
-            points.Add(new Vector3(transform.position.x - viewDistance, transform.position.y, transform.position.z + viewDistance));
-            points.Add(new Vector3(transform.position.x - viewDistance, transform.position.y, transform.position.z - viewDistance));
+            Collider[] blockers = Physics.OverlapSphere(transform.position, attributes.viewDistance);
+            points.Add(new Vector3(transform.position.x + attributes.viewDistance, transform.position.y, transform.position.z - attributes.viewDistance));
+            points.Add(new Vector3(transform.position.x + attributes.viewDistance, transform.position.y, transform.position.z + attributes.viewDistance));
+            points.Add(new Vector3(transform.position.x - attributes.viewDistance, transform.position.y, transform.position.z + attributes.viewDistance));
+            points.Add(new Vector3(transform.position.x - attributes.viewDistance, transform.position.y, transform.position.z - attributes.viewDistance));
             foreach (Collider block in blockers)
             {
                 BoxCollider blocker = block.transform.GetComponent<BoxCollider>();
@@ -252,9 +104,9 @@ public class Unit : RTSObject, IDestructable, IItemDropable, ISelectable
                     else
                         visibility.direction = original;
                     RaycastHit rh;
-                    if (!Physics.Raycast(visibility, out rh, viewDistance))
+                    if (!Physics.Raycast(visibility, out rh, attributes.viewDistance))
                     {
-                        borderPoints.Add(visibility.GetPoint(viewDistance * 1.41421356237f));
+                        borderPoints.Add(visibility.GetPoint(attributes.viewDistance * 1.41421356237f));
                         //Debug.DrawLine(visibility.origin, visibility.GetPoint(viewDistance), Color.green, 1);
                     }
                     else
@@ -266,7 +118,7 @@ public class Unit : RTSObject, IDestructable, IItemDropable, ISelectable
             }
             borderPoints.Sort(new ReverserClass(transform.position));
             //if (!(Owner is null)) Owner.minimap.VisionUpdateRun(borderPoints, transform.position, viewDistance);
-            unitVisionInfo = new UnitVisionInfo(borderPoints, transform.position, viewDistance);
+            unitVisionInfo = new UnitVisionInfo(borderPoints, transform.position, attributes.viewDistance);
         }
     }
 
