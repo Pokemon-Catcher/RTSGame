@@ -92,16 +92,16 @@ public class Attributes
     [XmlElement("armor")]
     public Armor armor = new Armor();
 
-    //[XmlArray("abilities")]
-    //[XmlArrayItem("ability")]
-    //public List<Ability> abilities = new List<Ability>();
+    [XmlArray("abilities")]
+    [XmlArrayItem("ability")]
+    public List<Ability> abilities = new List<Ability>();
 
     [XmlAttribute("level")]
     public int level;
     [XmlAttribute("viewDistance")]
     public float viewDistance;
-    //[XmlAttribute("icon")]
-    //public Sprite icon;
-    //[XmlAttribute("owner")]
-    //public RTSPlayer Owner;
+    [XmlAttribute("icon")]
+    public Sprite icon;
+    [XmlAttribute("owner")]
+    public RTSPlayer Owner;
 }

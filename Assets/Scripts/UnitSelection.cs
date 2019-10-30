@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using EventAggregation;
+using UnityEngine.EventSystems;
 
-
-public class UnitSelection : MonoBehaviour
+internal class UnitSelection : MonoBehaviour
 {
 
     private float mouseX;
@@ -24,9 +24,13 @@ public class UnitSelection : MonoBehaviour
     private Texture texture;
     private Camera cam;
 
+    [SerializeField]
+    private EventSystem evSystem;
+
     // Use this for initialization
     void Start()
     {
+        Debug.Log(evSystem == null);
         isSelecting = false;
         cam = Camera.main;
     }
@@ -34,16 +38,36 @@ public class UnitSelection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        SelectUnit();
+    }
+
+    void OnGUI()
+    {
+        if (isSelecting)
+        {
+            GUI.DrawTexture(new Rect(mouseX, mouseY, selectionWidth, selectionHeight), texture);
+        }
+    }
+
+    private void SelectUnit()
+    {
         if (Input.GetMouseButtonDown(0))
         {
-            isSelecting = true;
-            startMousePoint = Input.mousePosition;
-
-            ray = cam.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hit))
+            if (evSystem.IsPointerOverGameObject())
             {
-                StartSelectingPoint = hit.point;
+                //stuff on the hud 
+            }
+            else
+            {
+                isSelecting = true;
+                startMousePoint = Input.mousePosition;
+
+                ray = cam.ScreenPointToRay(Input.mousePosition);
+
+                if (Physics.Raycast(ray, out hit))
+                {
+                    StartSelectingPoint = hit.point;
+                }
             }
         }
 
@@ -56,24 +80,16 @@ public class UnitSelection : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             isSelecting = false;
-            DeselectUnits();
-            if (startMousePoint == Input.mousePosition)
-            {
-                OneSelect();
 
+            if (evSystem.IsPointerOverGameObject())
+            {
+                //stuff on the hud 
             }
             else
             {
+                DeselectUnits();
                 MultiSelect();
             }
-        }
-    }
-
-    void OnGUI()
-    {
-        if (isSelecting)
-        {
-            GUI.DrawTexture(new Rect(mouseX, mouseY, selectionWidth, selectionHeight), texture);
         }
     }
 
@@ -85,14 +101,9 @@ public class UnitSelection : MonoBehaviour
         {
             EndSelectingPoint = hit.point;
         }
-        FindUnitsInSelection();
-    }
 
-    private void FindUnitsInSelection()
-    {
-
-        MultiSelectEvent ev = new MultiSelectEvent() { firstCorner = StartSelectingPoint, secondCorner = EndSelectingPoint };
-        EventAggregator.Publish<MultiSelectEvent>(ev);
+        WorldSelectEvent ev = new WorldSelectEvent() { firstCorner = StartSelectingPoint, secondCorner = EndSelectingPoint };
+        EventAggregator.Publish<WorldSelectEvent>(ev);
     }
 
     private void DeselectUnits()
@@ -100,13 +111,5 @@ public class UnitSelection : MonoBehaviour
         DeselectEvent ev = new DeselectEvent();
         EventAggregator.Publish(ev);
     }
-
-    private void OneSelect()
-    {   
-        if (hit.point != Vector3.zero && hit.collider != null && hit.collider.gameObject.tag == "RTSObject")
-        {
-            SelectEvent ev = new SelectEvent { hit = this.hit, Attributes = XmlTools.ParseXmlToObject("Assets/UnitAttirbutes/" + hit.collider.GetComponent<RTSObject>().Name + ".txt") };
-            EventAggregator.Publish<SelectEvent>(ev);
-        }
-    }
+        //SelectEvent ev = new SelectEvent { hit = this.hit, Attributes = XmlTools.ParseXmlToObject("Assets/UnitAttirbutes/" + hit.collider.GetComponent<RTSObject>().Name + ".txt") };
 }

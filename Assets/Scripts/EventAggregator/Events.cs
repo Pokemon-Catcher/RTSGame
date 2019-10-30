@@ -13,13 +13,7 @@ namespace EventAggregation
         public int Value { get; set; }
     }
 
-    public class SelectEvent : IEventBase
-    {
-        public RaycastHit hit { get; set; }
-        public Attributes Attributes { get; set; }
-    }
-
-    public class MultiSelectEvent : IEventBase
+    public class WorldSelectEvent : IEventBase
     {
         public Vector3 firstCorner { get; set; }
         public Vector3 secondCorner { get; set; }

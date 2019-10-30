@@ -12,28 +12,34 @@ public class Unit : RTSObject, IDestructable, IItemDropable
     private Ray visibility;
 
     public UnitVisionInfo unitVisionInfo;
+
     public Attributes attributes = new Attributes();
+    private IGMove move;
 
     //props
+    [SerializeField]
+    public int health;
     public int Health { get; set; }
     public List<Item> Items { get; set; }
+
     public int MaxHealth { get; set; }
 
     protected override void Awake()
     {
         base.Awake();
-        //if (!(attributes.Owner is null)) attributes.Owner.units.Add(this);
+        if (!(attributes.Owner is null)) attributes.Owner.units.Add(this);
     }
 
     protected override void Start()
     {
+        move = GetComponent<IGMove>();
         base.Start();
         GameMode.instance.Units.Add(this);
         Items = new List<Item>();
-
+        attributes.abilities.Add(move);
         //tools.SerializeToXml(attributes, Name);
         //tools.ParseXmlToObject("Assets/UnitAttirbutes/lol.txt", ref attributes);
-        XmlTools.SerializeToXml(attributes, Name);
+        //XmlTools.SerializeToXml(attributes, Name);
     }
 
     public void TakeDamage(int count)
@@ -50,6 +56,7 @@ public class Unit : RTSObject, IDestructable, IItemDropable
     {
         base.Update();
         //VisionCalculation();
+        Health = health;
     }
 
     public override Dictionary<string, object> GetInfo()

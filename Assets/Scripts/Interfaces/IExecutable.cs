@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ability : MonoBehaviour
+public interface IExecutable
 {
-
+    void Execute(params object[] objects);
 }

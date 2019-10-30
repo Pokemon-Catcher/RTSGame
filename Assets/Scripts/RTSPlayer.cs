@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using EventAggregation;
-
+using System;
 
 public class RTSPlayer : MonoBehaviour
 {
@@ -14,45 +14,33 @@ public class RTSPlayer : MonoBehaviour
     public Camera playerCamera;
     public Minimap minimap;
     public List<Unit> units = new List<Unit>();
-    public List<Unit> selectedUnits = new List<Unit>(); 
+    public List<Unit> selectedUnits = new List<Unit>();
+
+    //hud and ability stuffs
+    private Dictionary<string, RTSObject> squadTypes = new Dictionary<string, RTSObject>();
+
+    [SerializeField]
+    private PlayerHUD playerHUD;
+    //private OrderHandler handler;
+
     private void Awake()
     {
-        EventAggregator.Subscribe<SelectEvent>(OnSelect);
-        EventAggregator.Subscribe<MultiSelectEvent>(OnMultiSelect);
+        playerHUD = GetComponent<PlayerHUD>();
+        EventAggregator.Subscribe<WorldSelectEvent>(OnWorldSelect);
         EventAggregator.Subscribe<DeselectEvent>(OnDeselect);
     }
 
-    private void OnSelect(IEventBase eventBase)
+    private void OnWorldSelect(IEventBase eventBase)
     {
-        SelectEvent ev = eventBase as SelectEvent;
-        Unit unit = ev.hit.collider.GetComponent<Unit>();
-        if (ev != null && units.Contains(unit))
-        {
-            selectedUnits.Add(unit);
-            Debug.Log("dada");
-        }
-    }
 
-    private void OnMultiSelect(IEventBase eventBase)
-    {
-        MultiSelectEvent ev = eventBase as MultiSelectEvent;
+        WorldSelectEvent ev = eventBase as WorldSelectEvent;
 
         Vector3 StartSelectingPoint = ev.firstCorner;
         Vector3 EndSelectingPoint = ev.secondCorner;
 
-        //foreach (Unit unit in units)
-        //{
-        //    float x = unit.transform.position.x;
-        //    float z = unit.transform.position.z;
-        //    if (x > StartSelectingPoint.x && x < EndSelectingPoint.x || (x < StartSelectingPoint.x && x > EndSelectingPoint.x))
-        //    {
-        //        if (z > StartSelectingPoint.z && z < EndSelectingPoint.z || (z < StartSelectingPoint.z && z > EndSelectingPoint.z))
-        //        {
-        //            selectedUnits.Add(unit);
-        //            Debug.Log("dada2");
-        //        }
-        //    }
-        //}
+        if (Mathf.Approximately(StartSelectingPoint.magnitude, EndSelectingPoint.magnitude))
+            StartSelectingPoint = new Vector3(StartSelectingPoint.x + 1f, StartSelectingPoint.y, StartSelectingPoint.z + 1f);            
+
         Vector3 scale = StartSelectingPoint - EndSelectingPoint;
         scale.x = Mathf.Abs(scale.x);
         scale.y = Mathf.Abs(scale.y);
@@ -62,12 +50,26 @@ public class RTSPlayer : MonoBehaviour
         Vector3 halfExtents = scale * 0.5f;
         RaycastHit[] hits = Physics.BoxCastAll(center, halfExtents, Vector3.up, Quaternion.identity, 100f, 1 << 10);
 
+        squadTypes.Clear();
+
         foreach (RaycastHit hit in hits)
         {
             Unit unit = hit.collider.GetComponent<Unit>();
 
-            if (units.Contains(unit))
+            if (!(unit is null) && units.Contains(unit))
+            {
                 selectedUnits.Add(unit);
+                    
+                if (!squadTypes.ContainsKey(unit.Name))
+                    squadTypes.Add(unit.Name, unit);
+            }
+        }
+
+        //drawer.DrawHUDfromType(squadTypes["Swordsman"] as Unit, button, canvas); // squadTypes[Name] <--- Name or ID will be taken from button
+
+        if (squadTypes.Count > 0)
+        {
+            playerHUD.DrawIndividualHUD(squadTypes["Swordsman"] as Unit);
         }
     }
 
@@ -75,11 +77,10 @@ public class RTSPlayer : MonoBehaviour
     {
         DeselectEvent ev = eventBase as DeselectEvent;
 
-        if (ev != null)
+        if (!(ev is null))
         {
             selectedUnits.Clear();
-            
-            Debug.Log("dada3");
+            playerHUD.ClearIndividualHUD();
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using EventAggregation;
+using System;
 
 public class HUDManager : MonoBehaviour
 {
@@ -11,34 +12,22 @@ public class HUDManager : MonoBehaviour
     private GameObject GeneralHUD;
 
     [SerializeField]
-    private GameObject UnitHUD;
-
-    [SerializeField]
     private Text timeText;
 
     [SerializeField]
     private DayCycle dayCycle;
+    private bool startUpdate;
 
-    [Header("Unit HUD")]
-    [SerializeField]
-    private Text unitName;
-
-    [SerializeField]
-    private Image icon;
-
-    [SerializeField]
-    private Text health;
-
-    private bool startHUDUpdate = false;
-    private bool startUnitUpdate = false;
-    private Attributes info;
+    public static HUDManager instance = null;
 
     void Awake()
     {
-        EventAggregator.Subscribe<SelectEvent>(DrawUnitHUD);
+        if (instance == null)
+            instance = this;
+        else if (instance == this)
+            Destroy(gameObject);
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         DrawGeneralHUD();
@@ -46,37 +35,21 @@ public class HUDManager : MonoBehaviour
 
     void DrawGeneralHUD()
     {
-        startHUDUpdate = true;
-        GeneralHUD.SetActive(true);   
+        GeneralHUD.SetActive(true);
+        startUpdate = true;
     }
-        
-    void DrawUnitHUD(IEventBase rts)
+
+    public void UpdateGeneralHUD()
     {
-        SelectEvent ev = rts as SelectEvent;
-        //icon = ev.Rts.Icon;
-
-        //ev.Info.Clear();
-
-        info = ev.Attributes;
-        unitName.text = "sis";
-        Debug.Log(info.armor.type + " " + info.armor.count);
-        startUnitUpdate = true;
-        UnitHUD.SetActive(true);
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (startHUDUpdate)
-        {
+        if (startUpdate)
+        { 
             timeText.text = dayCycle.time.hours + ":" + dayCycle.time.minutes;
-        }
-
-        if (startUnitUpdate)
-        {
-            //health.text = (int)info["health"] + "/" + (int)info["maxHealth"];
-            //if (info.ContainsKey("xp"))
-            //    health.text = ((int)info["xp"]).ToString();
         }
     }
 }

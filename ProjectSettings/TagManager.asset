@@ -8,6 +8,8 @@ TagManager:
   - RTSObject
   - Terrain
   - Constructing
+  - eventSystem
+  - HUD
   layers:
   - Default
   - TransparentFX
