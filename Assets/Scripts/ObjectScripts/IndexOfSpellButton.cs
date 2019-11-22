@@ -1,20 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class IndexOfSpellButton : MonoBehaviour
 {
     [SerializeField]
-    private Ability ability;
+    private int ability;
 
-    public void SetAbility(Ability ability)
+    public void SetAbility(int ability)
     {
         this.ability = ability;
-        Debug.Log("my spell is: " + this.ability == null);
     }
 
-    public void SetAbilityInfo()
+    public void SetFunc(bool needOrder)
     {
-        OrderHandler.HandleAbility(this.ability);
+        if (needOrder)
+        {
+            GetComponent<Button>().onClick.AddListener(delegate { transform.Find("Player").GetComponent<RTSPlayer>().MakeOrderWithParams(ability); });
+        }
+        else
+        {
+            GetComponent<Button>().onClick.AddListener(delegate { transform.Find("Player").GetComponent<RTSPlayer>().MakeOrder(ability); });
+        }
     }
 }
+    

@@ -66,7 +66,15 @@ internal class UnitSelection : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit))
                 {
-                    StartSelectingPoint = hit.point;
+                    if (hit.collider.tag == "RTSObject")
+                    {
+                        ClickUnitSearch unitSearch = new ClickUnitSearch() { Unit = hit.collider.GetComponent<Unit>() };
+                        EventAggregator.Publish<ClickUnitSearch>(unitSearch);
+                    }
+                    else
+                    {
+                        StartSelectingPoint = hit.point;
+                    }
                 }
             }
         }

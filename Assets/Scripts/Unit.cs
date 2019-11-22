@@ -14,7 +14,8 @@ public class Unit : RTSObject, IDestructable, IItemDropable
     public UnitVisionInfo unitVisionInfo;
 
     public Attributes attributes = new Attributes();
-    private IGMove move;
+
+    public OrderHandler orderHandler;
 
     //props
     [SerializeField]
@@ -32,14 +33,13 @@ public class Unit : RTSObject, IDestructable, IItemDropable
 
     protected override void Start()
     {
-        move = GetComponent<IGMove>();
         base.Start();
         GameMode.instance.Units.Add(this);
         Items = new List<Item>();
-        attributes.abilities.Add(move);
         //tools.SerializeToXml(attributes, Name);
         //tools.ParseXmlToObject("Assets/UnitAttirbutes/lol.txt", ref attributes);
         //XmlTools.SerializeToXml(attributes, Name);
+        orderHandler = GetComponent<OrderHandler>();
     }
 
     public void TakeDamage(int count)

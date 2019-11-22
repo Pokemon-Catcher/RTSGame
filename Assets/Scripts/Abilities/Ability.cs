@@ -2,13 +2,24 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
-public abstract class Ability : MonoBehaviour, IExecutable
+public abstract class Ability : MonoBehaviour, IAction
 {
-    public abstract void Execute(params object[] objects);
 
-    public void AtmrMove(NavMeshAgent nav, Vector3 dir)
-    {
-        nav.SetDestination(dir);
-    }
+    [SerializeField]
+    protected Transform pos;
+
+    [SerializeField]
+    protected GameObject buttonObject;
+    protected Button button;
+
+    public abstract void FinishAction();
+
+    public abstract bool IsFinished();
+
+    public abstract void StartAction();
+
+    public abstract void UpdateAction();
+    
 }

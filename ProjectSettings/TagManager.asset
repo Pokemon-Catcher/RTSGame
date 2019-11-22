@@ -10,6 +10,7 @@ TagManager:
   - Constructing
   - eventSystem
   - HUD
+  - AbilityStore
   layers:
   - Default
   - TransparentFX

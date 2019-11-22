@@ -18,14 +18,15 @@ public class Hero : Unit
         PassiveCustomAbility passiveAbility = new PassiveCustomAbility("passive ability", null);
         AbililtyComponent component = new AbilityFloatComponent("float", AbilityTools.ComponentTargets.Armor);
         passiveAbility.AddComponent(component);
-        AbililtyComponent component2 = new AbilityIntComponent("int", AbilityTools.ComponentTargets.Health);
+        AbililtyComponent component2 = new AbilityComponentType<int>("int", AbilityTools.ComponentTargets.Health);
         passiveAbility.AddComponent(component2);
-        AbililtyComponent component3 = AbilityTools.GetInstanceType(AbilityTools.ComponentTargets.Special, "special");
+        AbililtyComponent component3 = AbilityTools.GetInstanceType(AbilityTools.ComponentTargets.Special, "Special");
         passiveAbility.AddComponent(component3);
-
+    
         foreach(AbililtyComponent abililtyComponent in passiveAbility.Components)
         {
-            Debug.Log(abililtyComponent.name + " " + abililtyComponent.ComponentTargets);
+            Debug.Log(abililtyComponent.name + " " + abililtyComponent.ComponentTargets + " " + abililtyComponent.ObjValue);
+            Debug.Log(abililtyComponent.ObjValue == null);
         }
     }
 

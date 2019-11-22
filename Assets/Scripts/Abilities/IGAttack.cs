@@ -4,8 +4,23 @@ using UnityEngine;
 
 public class IGAttack : Ability
 {
-    public override void Execute(params object[] objects)
+    public override void FinishAction()
     {
-        Debug.Log("Attack!");
+
+    }
+
+    public override bool IsFinished()
+    {
+        return true;
+    }
+
+    public override void StartAction()
+    {
+
+    }
+
+    public override void UpdateAction()
+    {
+
     }
 }

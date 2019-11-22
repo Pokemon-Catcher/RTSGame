@@ -48,7 +48,7 @@ public class ButtonCrafter : MonoBehaviour
         {
             gameObjects[i] = Instantiate(button, Vector2.zero, Quaternion.identity) as GameObject;
             gameObjects[i].transform.SetParent(canvas, false);
-            gameObjects[i].GetComponent<IndexOfSpellButton>().SetAbility(abilities[i]);
+            //gameObjects[i].GetComponent<IndexOfSpellButton>().SetAbility(abilities[i]);
         }
 
         return gameObjects;

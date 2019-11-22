@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using EventAggregation;
-using System;
+using System.Linq;
 
 public class RTSPlayer : MonoBehaviour
 {
@@ -16,8 +16,9 @@ public class RTSPlayer : MonoBehaviour
     public List<Unit> units = new List<Unit>();
     public List<Unit> selectedUnits = new List<Unit>();
 
+    private int ability;
     //hud and ability stuffs
-    private Dictionary<string, RTSObject> squadTypes = new Dictionary<string, RTSObject>();
+    private Dictionary<string, Unit> squadTypes = new Dictionary<string, Unit>();
 
     [SerializeField]
     private PlayerHUD playerHUD;
@@ -69,7 +70,7 @@ public class RTSPlayer : MonoBehaviour
 
         if (squadTypes.Count > 0)
         {
-            playerHUD.DrawIndividualHUD(squadTypes["Swordsman"] as Unit);
+            playerHUD.DrawIndividualHUD(squadTypes["Bich"]);
         }
     }
 
@@ -81,6 +82,40 @@ public class RTSPlayer : MonoBehaviour
         {
             selectedUnits.Clear();
             playerHUD.ClearIndividualHUD();
+        }
+    }
+
+    public void MakeOrderWithParams(int ability)
+    {
+        if (EventAggregator.IsSubscribed<ClickUnitSearch>(OnClickUnitySearch)) EventAggregator.Unsubscribe<ClickUnitSearch>(OnClickUnitySearch);
+        Debug.Log("Here");
+        this.ability = ability;
+
+        //if()
+        EventAggregator.Subscribe<ClickUnitSearch>(OnClickUnitySearch);
+    }
+
+    private void OnClickUnitySearch(IEventBase eventBase)
+    {
+        Debug.Log("Here2");
+        ClickUnitSearch unitSearch = eventBase as ClickUnitSearch;
+        if (!(unitSearch is null))
+        {
+            //do some stuff with ability params
+            //(squadTypes["Bich"].attributes.abilities.FirstOrDefault(item => item.ID == ability) as ParametricAbility).abilityParams.unit = unitSearch.Unit;
+
+            MakeOrder(ability);
+        }
+    }
+
+    public void MakeOrder(int ability)
+    {
+        foreach (Unit unit in selectedUnits)
+        {
+            //if (unit.attributes.abilities.Any(item => item == unit.attributes.abilities[ability]))
+            //unit.orderHandler.AddAction(squadTypes["Swordsman"].attributes.abilities[ability]);
+            Debug.Log(ability);
+            unit.orderHandler.AddAction(ability);
         }
     }
 }

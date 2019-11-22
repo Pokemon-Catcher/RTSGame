@@ -32,8 +32,7 @@ public class PlayerHUD : MonoBehaviour
     {
         currentUnit = unit;
         unitHUD.SetActive(true);
-        Debug.Log(currentUnit.attributes.abilities.Count);
-        ConstructButtons(currentUnit.attributes.abilities);
+        ConstructButtons();
     }
 
     public void ClearIndividualHUD()
@@ -47,14 +46,15 @@ public class PlayerHUD : MonoBehaviour
         unitHUD.SetActive(false);
     }
 
-    void ConstructButtons(List<Ability> abilities)
+    void ConstructButtons()
     {
-        transforms = new GameObject[abilities.Count];
-        for (int i = 0; i < abilities.Count; ++i)
+        transforms = new GameObject[currentUnit.attributes.abilities.Count];
+        for (int i = 0; i < currentUnit.attributes.abilities.Count; ++i)
         {
             transforms[i] = Instantiate(button, Vector3.zero, Quaternion.identity) as GameObject;
             transforms[i].transform.SetParent(canvas);
-            button.GetComponent<IndexOfSpellButton>().SetAbility(abilities[i]);
+            //button.GetComponent<IndexOfSpellButton>().SetAbility(currentUnit.attributes.abilities[i].ID);
+            //button.GetComponent<IndexOfSpellButton>().SetFunc(currentUnit.attributes.abilities[i].needOrder);
             buttons.Add(transforms[i]);
         }
     }

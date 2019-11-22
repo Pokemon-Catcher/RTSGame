@@ -23,4 +23,9 @@ namespace EventAggregation
     {
 
     }
+
+    public class ClickUnitSearch : IEventBase
+    {
+        public Unit Unit { get; set; }
+    }
 }
